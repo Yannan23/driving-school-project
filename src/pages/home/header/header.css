@@ -1,0 +1,31 @@
+nav li:hover {
+    color: orange;
+}
+
+button:hover {
+    background-color: white;
+    color: orange;
+}
+
+@media (max-width: 960px) {
+    .navbar {
+        position: relative;
+        /* transition: all 0.3s ease; */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        gap: 10px;
+        color: white;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+
+    }
+}

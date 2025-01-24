@@ -1,0 +1,17 @@
+:root {
+    --background-color: #0F1C2F;
+    --background-light-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --yellow-color: #FDB90A;
+    --orange-color: #FF641A;
+    --red-color: #F31717;
+    --font-dark-color: #414040;
+    --font-light-color: #F1F1F1;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
