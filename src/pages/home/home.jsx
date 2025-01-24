@@ -1,5 +1,5 @@
-import Header from './header/header'
-import Footer from './footer/footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import Main from './main/main'
 
 function Home() {
