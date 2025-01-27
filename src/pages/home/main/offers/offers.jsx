@@ -1,10 +1,14 @@
 import React from 'react';
+import './offers.css'
 
 const Offers = () => {
     return (
-        <header>
-            <h1>Offers</h1>
-        </header>
+        <>
+            <div className='container'>
+
+                <h1>Offers</h1>
+            </div>
+        </>
     )
 }
 
