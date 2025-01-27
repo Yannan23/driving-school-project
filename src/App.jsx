@@ -6,7 +6,7 @@ import Layout from './components/layout/layout';
 import WhyChooseUs from './pages/why-choose-us/why-choose-us'
 import Package from './pages/package/package'
 import Location from './pages/location/location'
-import ContactUs from './pages/location/contact-us/contact-us'
+import ContactUs from './pages/contact-us/contact-us'
 import './output.css'
 
 function App() {

@@ -10,15 +10,14 @@ const Header = () => {
     };
 
     return (
-        <header >
-            <nav className='navbar flex align-middle justify-between px-4 max-h-[15vh] bg-dark-color text-white-color'>
+        <header className='fixed'>
+            <nav className='top-0 left-0 right-0 w-full flex items-center justify-between px-4 max-h-[15vh] bg-dark-color text-white-color'>
                 <div className="w-1/5">
                     <img src="/src/assets/logo.svg" className='h-full' alt="" />
                 </div>
                 <div className='toggle-button md:hidden' onClick={toggleNavbar}>
-                    <div className="toggle-button flex-col w-28 gap-5 items-center justify-center absolute top-0 right-1 px-4 py-6 hidden max-md:flex cursor-pointer max-sm:gap-4 w-15">
-                        <div className=""><i className="fa-solid fa-bars"></i>
-                            <i className="fa-solid fa-check"></i></div>
+                    <div className="toggle-button items-center justify-center absolute top-0 right-1 px-4 py-6 hidden max-md:flex cursor-pointer max-sm:gap-4 w-15">
+                        <div className=""><i className="fa-solid fa-bars"></i></div>
                     </div>
                 </div>
                 <div className='w-4/5'>
