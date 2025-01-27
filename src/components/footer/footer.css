@@ -1,0 +1,19 @@
+/* Add any additional custom styles here if needed */
+.footer-input::placeholder {
+    color: #666;
+}
+
+.font-serif {
+    font-family: 'Crimson Text', serif;
+}
+
+input::placeholder {
+    color: #666;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #E94234;
+}
