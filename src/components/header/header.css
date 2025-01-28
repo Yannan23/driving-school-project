@@ -1,5 +1,58 @@
-nav li:hover {
+.navbar {
+    padding: 0 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-button {
+    right: 2rem;
+    font-size: 2.5rem;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
     color: orange;
+}
+
+.navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    color: white;
+    background-color: #1869e4;
+    padding: 20px;
+    width: 100%;
+}
+
+.navbar-links li {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.nav-btn-container {
+    width: 100%;
+    height: 3rem;
+}
+
+.nav-btn {
+    width: 100%;
+}
+
+.nav-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+nav li:hover {
+    background-color: rgb(255, 255, 255);
+    color: orange;
+    cursor: pointer;
 }
 
 button:hover {
@@ -7,24 +60,16 @@ button:hover {
     color: orange;
 }
 
-@media (max-width: 960px) {
-    .navbar {
-        position: relative;
-        /* transition: all 0.3s ease; */
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        gap: 10px;
-        color: white;
-        background-color: black;
-        padding: 20px;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
+.navbar {
+    position: relative;
 }
+
+.navbar-links.active {
+    display: flex;
+}
+
+/* .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */

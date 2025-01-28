@@ -10,28 +10,30 @@ const Header = () => {
     };
 
     return (
-        <header className='fixed'>
-            <nav className='top-0 left-0 right-0 w-full flex items-center justify-between px-4 max-h-[15vh] bg-dark-color text-white-color'>
-                <div className="w-1/5">
-                    <img src="/src/assets/logo.svg" className='h-full' alt="" />
+        <header className='flex justify-center items-center w-full bg-dark-color text-white-color'>
+            <nav className='navbar flex justify-between items-center w-full relative'>
+                {/** navbar image */}
+                <div className="">
+                    <img src="/src/assets/logo.svg" className='nav-logo' alt="" />
                 </div>
-                <div className='toggle-button md:hidden' onClick={toggleNavbar}>
-                    <div className="toggle-button items-center justify-center absolute top-0 right-1 px-4 py-6 hidden max-md:flex cursor-pointer max-sm:gap-4 w-15">
-                        <div className=""><i className="fa-solid fa-bars"></i></div>
-                    </div>
+                {/** navbar toggle button */}
+                <div className='toggle-button absolute' onClick={toggleNavbar}>
+                    <div className=""><i className="fa-solid fa-bars"></i></div>
                 </div>
-                <div className='w-4/5'>
-                    <div className='flex justify-between py-4 px-10 text-lg'>
-                        <ul className={`navbar-links max-md:hidden flex items-center justify-evenly gap-10 capitalize ${isActive ? 'active' : ''}`}>
+                {/** navbar links and button*/}
+                <div className=''>
+                    <div className='flex flex-col py-4 px-10 text-lg'>
+                        <ul className={`navbar-links im-fell-double-pica-sc-regular ${isActive ? 'active' : ''}`}>
+                            {/* <ul className='hidden'> */}
                             <li><NavLink to="/">home</NavLink></li>
                             <li><NavLink to="why-choose-us">why choose us</NavLink></li>
                             <li><NavLink to="package">package</NavLink></li>
                             <li><NavLink to="location">location</NavLink></li>
                             <li><NavLink to="contact-us">contact us</NavLink></li>
+                            <div className="nav-btn-container">
+                                <button className='nav-btn px-6 py-3 cursor-pointer bg-yellow-color'>Book Now</button>
+                            </div>
                         </ul>
-                        <div className="btn">
-                            <button className='px-6 py-3 cursor-pointer rounded-full bg-yellow-color max-md:hidden'>Book Now</button>
-                        </div>
                     </div>
                 </div>
             </nav>

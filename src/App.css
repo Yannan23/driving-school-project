@@ -9,6 +9,11 @@
     --font-light-color: #F1F1F1;
 }
 
+.im-fell-double-pica-sc-regular {
+    font-family: "IM Fell Double Pica SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* * {
     margin: 0;
