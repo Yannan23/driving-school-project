@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
                 {/** navbar links and button*/}
                 <div className=''>
-                    <div className='flex flex-col py-4 px-10 text-lg'>
+                    <div className='navbar-links-container flex flex-col'>
                         <ul className={`navbar-links im-fell-double-pica-sc-regular ${isActive ? 'active' : ''}`}>
                             {/* <ul className='hidden'> */}
                             <li><NavLink to="/">home</NavLink></li>
@@ -30,14 +30,14 @@ const Header = () => {
                             <li><NavLink to="package">package</NavLink></li>
                             <li><NavLink to="location">location</NavLink></li>
                             <li><NavLink to="contact-us">contact us</NavLink></li>
-                            <div className="nav-btn-container">
-                                <button className='nav-btn px-6 py-3 cursor-pointer bg-yellow-color'>Book Now</button>
+                            <div className="nav-btn-container flex justify-center">
+                                <button className='nav-btn flex justify-center items-center" cursor-pointer bg-yellow-color'>Book Now</button>
                             </div>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </nav >
+        </header >
     )
 }
 
