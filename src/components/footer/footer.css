@@ -1,0 +1,134 @@
+/* Add any additional custom styles here if needed */
+.im-fell-double-pica-sc-regular {
+    font-family: "IM Fell Double Pica SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    font-size: xx-large;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.footer-info-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-container {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.footer-form {
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.footer-input {
+    width: 80%;
+    height: 3rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.footer-input::placeholder {
+    color: #666;
+}
+
+.footer-btn {
+    background-color: red;
+    width: 40%;
+}
+
+.footer-contact-info {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-contact-info-details-container {
+    gap: 0.5rem;
+}
+
+.footer-terms-container {
+    border-top: 1px solid #666;
+}
+
+.foooter-contact-details {
+    gap: 0.5rem;
+}
+
+.foooter-contact-details p:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.footer-social-media-container i:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.footer-terms-container {
+    font-size: x-small;
+    padding: 1rem 3rem;
+}
+
+.footer-keywork {
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid #666;
+}
+
+.font-serif {
+    font-family: 'Crimson Text', serif;
+}
+
+/* input::placeholder {
+    color: #666;
+    font-size: 1rem;
+} */
+/* input:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #E94234;
+} */
+
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        margin-right: 2rem;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+
+    .footer-terms-container {
+        padding: 1rem 5rem;
+    }
+
+    .footer-contact-info {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .footer-contact-info-details-container {
+        gap: 1rem;
+    }
+}
