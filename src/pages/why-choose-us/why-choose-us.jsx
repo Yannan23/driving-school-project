@@ -1,13 +1,18 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-// import './header.css';
+import Header from "../../components/why-choose-us/header/header";
+import Banner from "../../components/why-choose-us/banner/banner";
+import Labels from "../../components/why-choose-us/labels/labels";
+import Comment from "../../components/why-choose-us/comment/comment";
+import Footer from "../../components/why-choose-us/footer/footer"
 
 const WhyChooseUs = () => {
     return (
-        <header>
-            <h1>My WhyChooseUs</h1>
-            <p><NavLink to="/">home</NavLink></p>
-        </header>
+        <main>
+            <Header/>
+            <Banner/>
+            <Labels/>
+            <Comment/>
+            <Footer/>
+        </main>
     )
 }
 
