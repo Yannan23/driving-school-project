@@ -140,4 +140,8 @@ footer h2 {
     .footer-info-sub-container {
         gap: 2rem
     }
+
+    footer h2 {
+        font-size: 2rem;
+    }
 }

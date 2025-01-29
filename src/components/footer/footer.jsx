@@ -42,7 +42,7 @@ const Footer = () => {
                         <div className='footer-info'>
                             {/*footer subscribe */}
                             <div>
-                                <h2 className='im-fell-double-pica-sc-regular'>Subscribe to our newsletter</h2>
+                                <h2 className='im-fell-double-pica-sc-regular'>subscribe to our newsletter</h2>
                                 <form onSubmit={onSubmit} action="" className='footer-form flex flex-col'>
                                     <label htmlFor="footer-email">Add your email below and we will make sure you have
                                         the latest news</label>
@@ -54,7 +54,7 @@ const Footer = () => {
                             </div>
                             {/*contact info */}
                             <div className='footer-contact-info flex flex-col'>
-                                <h2 className='im-fell-double-pica-sc-regular'>Contact Info</h2>
+                                <h2 className='im-fell-double-pica-sc-regular'>contact info</h2>
                                 <div className='footer-contact-info-details-container flex'>
                                     <div className='foooter-contact-details flex justify-start items-center'>
                                         <i className="fa-solid fa-envelope"></i>
