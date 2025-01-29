@@ -1,12 +1,12 @@
 .banner-container {
     margin-top: 110px;
     background-image: url('../../../../assets/banner-image.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
-    padding: 3rem 5rem;
+    background-position: center center;
+    min-height: 100vh;
+    padding: 7rem 5rem;
     color: var(--font-light-color);
-    box-sizing: border-box;
 }
 
 .banner-content {
@@ -15,17 +15,18 @@
     justify-content: start;
     align-items: flex-start;
     height: 100%;
-    width: 50%;
+    width: 60%;
+    gap: 1rem;
 }
 
 .banner-content h1 {
-    font-size: 4vh;
+    font-size: 5vh;
     width: 80%;
 }
 
 .banner-content h1 span {
     color: var(--yellow-color);
-    font-size: 5vh;
+    font-size: 6vh;
 }
 
 .banner-content p {
@@ -33,7 +34,6 @@
     margin-top: 1rem;
     width: 100%;
     background-color: rgba(83, 83, 83, 0.4);
-    width: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -56,11 +56,15 @@
     height: 3rem;
     background-color: var(--yellow-color);
     color: var(--font-light-color);
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
+    .banner-content {
+        width: 50%;
+    }
+
     .banner-content h1 {
         font-size: 5.5vh;
     }
@@ -106,6 +110,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .banner-container {
+        padding: 4rem 5rem;
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+
+    }
+
     .banner-content h1 {
         font-size: 8vh;
     }
