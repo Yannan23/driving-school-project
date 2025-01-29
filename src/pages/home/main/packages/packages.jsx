@@ -2,9 +2,9 @@ import React from 'react';
 
 const Packages = () => {
     return (
-        <header>
+        <div>
             <h1>Packages</h1>
-        </header>
+        </div>
     )
 }
 

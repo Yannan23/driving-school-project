@@ -2,9 +2,9 @@ import React from 'react';
 
 const Locations = () => {
     return (
-        <header>
+        <div>
             <h1>Locations</h1>
-        </header>
+        </div>
     )
 }
 

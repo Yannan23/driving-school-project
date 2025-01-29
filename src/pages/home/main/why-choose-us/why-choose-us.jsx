@@ -2,9 +2,9 @@ import React from 'react';
 
 const WhyChooseUs = () => {
     return (
-        <header>
+        <div>
             <h1>WhyChooseUs</h1>
-        </header>
+        </div>
     )
 }
 
