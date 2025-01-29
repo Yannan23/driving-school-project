@@ -1,41 +1,71 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const navRef = useRef(null);
 
     const toggleNavbar = () => {
         setIsActive(!isActive);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            console.log('Scroll Y:', window.scrollY);
+
+            if (window.scrollY > 150) { // Simplified condition for testing
+                setIsScrolled(true);
+                setIsVisible(false);
+            } else {
+                setIsScrolled(false);
+                setIsVisible(true);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className='fixed'>
-            <nav className='top-0 left-0 right-0 w-full flex items-center justify-between px-4 max-h-[15vh] bg-dark-color text-white-color'>
-                <div className="w-1/5">
-                    <img src="/src/assets/logo.svg" className='h-full' alt="" />
-                </div>
-                <div className='toggle-button md:hidden' onClick={toggleNavbar}>
-                    <div className="toggle-button items-center justify-center absolute top-0 right-1 px-4 py-6 hidden max-md:flex cursor-pointer max-sm:gap-4 w-15">
+        <header ref={navRef} className={`flex flex-col justify-center items-center w-full bg-dark-color text-white-color your-nav-classes ${isScrolled ? 'scrolled' : ''}`} >
+            {/** navbar */}
+            <div className='relative w-full'>
+                <nav className='navbar flex justify-between items-center w-full relative'>
+                    {/** navbar image */}
+                    <div className="">
+                        <img src="/src/assets/logo.svg" className='nav-logo' alt="" />
+                    </div>
+                    {/** navbar toggle button */}
+                    <div className='toggle-button absolute' onClick={toggleNavbar}>
                         <div className=""><i className="fa-solid fa-bars"></i></div>
                     </div>
-                </div>
-                <div className='w-4/5'>
-                    <div className='flex justify-between py-4 px-10 text-lg'>
-                        <ul className={`navbar-links max-md:hidden flex items-center justify-evenly gap-10 capitalize ${isActive ? 'active' : ''}`}>
+                    {/** navbar links and button*/}
+                    <div className='navbar-links-container flex flex-col'>
+                        <ul className={`navbar-links im-fell-double-pica-sc-regular ${isActive ? 'active' : ''}`}>
                             <li><NavLink to="/">home</NavLink></li>
                             <li><NavLink to="why-choose-us">why choose us</NavLink></li>
                             <li><NavLink to="package">package</NavLink></li>
                             <li><NavLink to="location">location</NavLink></li>
                             <li><NavLink to="contact-us">contact us</NavLink></li>
+                            <div className="nav-btn-container flex justify-center">
+                                <button className='nav-btn flex justify-center items-center" cursor-pointer bg-yellow-color'>Book Now</button>
+                            </div>
                         </ul>
-                        <div className="btn">
-                            <button className='px-6 py-3 cursor-pointer rounded-full bg-yellow-color max-md:hidden'>Book Now</button>
-                        </div>
+                    </div>
+                </nav >
+                {/** header contact info */}
+                <div className={`${isVisible ? 'visible' : 'hidden'} header-contact-info-details-container flex justify-between w-full`}>
+                    <div className='header-contact-details roboto-condensed flex justify-start items-center gap-1'>
+                        <p><NavLink to="contact-us">Email: khanrashed2411@gmail.com</NavLink></p>
+                    </div>
+                    <div className='header-contact-details roboto-condensed flex justify-start items-center'>
+                        <p><NavLink to="contact-us">Call us: 0470272595</NavLink></p>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </header >
     )
 }
 

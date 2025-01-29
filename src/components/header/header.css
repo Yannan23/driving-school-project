@@ -1,5 +1,84 @@
-nav li:hover {
+.scrolled {
+    height: 4rem;
+}
+
+.scrolled .nav-logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    padding: 0 2rem;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.toggle-button {
+    right: 4rem;
+    font-size: 2rem;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
     color: orange;
+}
+
+.navbar-links-container {
+    padding: 2px 5px;
+    font-size: 1rem;
+}
+
+.navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    color: white;
+    background-color: #1869e4;
+    padding: 20px;
+    width: 100%;
+}
+
+.navbar-links li {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.nav-btn-container {
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 2rem;
+}
+
+nav li:hover {
+    background-color: rgb(255, 255, 255);
+    color: orange;
+    cursor: pointer;
 }
 
 button:hover {
@@ -7,24 +86,110 @@ button:hover {
     color: orange;
 }
 
-@media (max-width: 960px) {
+.navbar {
+    position: relative;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+
+.header-contact-info-details-container {
+    padding: 0 3rem;
+    background-color: white;
+    color: var(--font-dark-color);
+    height: 2.5rem;
+    transform: translateY(0);
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.header-contact-info-details-container.hidden {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+
+}
+
+.header-contact-details:hover {
+    color: var(--yellow-color);
+}
+
+@media screen and (min-width: 990px) {
     .navbar {
-        position: relative;
-        /* transition: all 0.3s ease; */
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        gap: 10px;
-        color: white;
-        background-color: black;
-        padding: 20px;
-    }
-
-    .navbar-links.active {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
     }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .navbar-links-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        position: relative;
+        width: auto;
+        gap: 0;
+        font-size: 1rem;
+    }
+
+    .navbar-links li {
+        /* padding: 0 0.5rem; */
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 10rem;
+        height: 3.25rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li:hover {
+        color: orange;
+        background-color: transparent;
+    }
+
+    .nav-btn-container {
+        width: 50% !important;
+        height: auto;
+        padding: 0;
+
+    }
+
+    .nav-btn {
+        width: 60%;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+    }
+
+    .nav-logo {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-logo {
+        margin-left: 6rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .navbar-links {
+        padding: 0;
+    }
+
 }
