@@ -34,7 +34,7 @@ const Footer = () => {
         <footer className='bg-dark-color text-white-color flex items-center justify-center'>
             <div className='footer-container flex flex-col items-center justify-center'>
                 <div className='footer-info-container w-full flex flex-col gap-5'>
-                    <div className='flex gap-5 '>
+                    <div className='footer-info-sub-container flex'>
                         {/*footer logo */}
                         <div className='footer-logo-container flex items-center justify-center'>
                             <img src="/src/assets/logo.svg" alt="logo" className='footer-logo w-full h-full' />
@@ -55,7 +55,7 @@ const Footer = () => {
                             {/*contact info */}
                             <div className='footer-contact-info flex flex-col'>
                                 <h2 className='im-fell-double-pica-sc-regular'>Contact Info</h2>
-                                <div className='footer-contact-info-details-container flex flex-col'>
+                                <div className='footer-contact-info-details-container flex'>
                                     <div className='foooter-contact-details flex justify-start items-center'>
                                         <i className="fa-solid fa-envelope"></i>
                                         <p><NavLink to="contact-us">khanrashed2411@gmail.com</NavLink></p>

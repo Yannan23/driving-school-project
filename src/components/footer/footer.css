@@ -1,12 +1,7 @@
 /* Add any additional custom styles here if needed */
-.im-fell-double-pica-sc-regular {
-    font-family: "IM Fell Double Pica SC", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 footer h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: white;
     font-size: xx-large;
@@ -23,14 +18,18 @@ footer h2 {
     align-items: center;
 }
 
+.footer-info-sub-container {
+    gap: 1rem
+}
+
 .footer-info {
     display: flex;
     flex-direction: column;
 }
 
 .footer-logo-container {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     flex-shrink: 0;
 }
 
@@ -56,12 +55,12 @@ footer h2 {
 }
 
 .footer-contact-info {
-    gap: 0.5rem;
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
 .footer-contact-info-details-container {
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
 .footer-terms-container {
@@ -108,6 +107,7 @@ footer h2 {
 } */
 
 @media screen and (min-width: 768px) {
+
     .footer-logo {
         margin-right: 2rem;
     }
@@ -119,10 +119,6 @@ footer h2 {
         gap: 2.5rem;
     }
 
-    .footer-terms-container {
-        padding: 1rem 5rem;
-    }
-
     .footer-contact-info {
         gap: 1rem;
         margin-top: 0;
@@ -130,5 +126,18 @@ footer h2 {
 
     .footer-contact-info-details-container {
         gap: 1rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1029px) {
+    .footer-logo-container {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+    }
+
+    .footer-info-sub-container {
+        gap: 2rem
     }
 }
