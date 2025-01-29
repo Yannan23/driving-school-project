@@ -80,11 +80,28 @@
     .banner-content h1 {
         font-size: 6vh;
     }
+
+    .banner-btn {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 990px) {
     .banner-container {
         margin-top: 140px;
+    }
+
+    .banner-content h1 {
+        font-size: 6.5vh;
+    }
+
+    .banner-content h1 span {
+        font-size: 7.5vh;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
     }
 }
 
@@ -99,5 +116,6 @@
 
     .banner-btn {
         margin-top: 2rem;
+        font-size: 1.5rem;
     }
 }
