@@ -1,4 +1,103 @@
 .banner-container {
-    height: 500px;
-    background-color: aquamarine;
+    margin-top: 110px;
+    background-image: url('../../../../assets/banner-image.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 900px;
+    padding: 3rem 5rem;
+    color: var(--font-light-color);
+    box-sizing: border-box;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 4vh;
+    width: 80%;
+}
+
+.banner-content h1 span {
+    color: var(--yellow-color);
+    font-size: 5vh;
+}
+
+.banner-content p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: rgba(83, 83, 83, 0.4);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* text-align: justify; */
+}
+
+.banner-content p span {
+    /* color: var(--red-color); */
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.banner-btn {
+    width: 60%;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: var(--yellow-color);
+    color: var(--font-light-color);
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .banner-content h1 {
+        font-size: 5.5vh;
+    }
+
+    .banner-content h1 span {
+        font-size: 6.5vh;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 960px) {
+    .banner-content h1 {
+        font-size: 6vh;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .banner-container {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-content h1 {
+        font-size: 8vh;
+    }
+
+    .banner-content h1 span {
+        font-size: 8.5vh;
+    }
+
+    .banner-btn {
+        margin-top: 2rem;
+    }
 }

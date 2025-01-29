@@ -50,7 +50,7 @@ const Header = () => {
                             <li><NavLink to="location">location</NavLink></li>
                             <li><NavLink to="contact-us">contact us</NavLink></li>
                             <div className="nav-btn-container flex justify-center">
-                                <button className='nav-btn flex justify-center items-center" cursor-pointer bg-yellow-color'>Book Now</button>
+                                <button className='nav-btn flex justify-center items-center" cursor-pointer bg-yellow-color'>BOOK NOW</button>
                             </div>
                         </ul>
                     </div>
