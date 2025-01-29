@@ -10,7 +10,7 @@ const Header = () => {
     };
 
     return (
-        <header className='flex justify-center items-center w-full bg-dark-color text-white-color'>
+        <header className='flex flex-col justify-center items-center w-full bg-dark-color text-white-color'>
             <nav className='navbar flex justify-between items-center w-full relative'>
                 {/** navbar image */}
                 <div className="">
@@ -37,6 +37,14 @@ const Header = () => {
                     </div>
                 </div>
             </nav >
+            <div className='header-contact-info-details-container flex justify-between w-full'>
+                <div className='header-contact-details roboto-condensed flex justify-start items-center gap-1'>
+                    <p><NavLink to="contact-us">Email: khanrashed2411@gmail.com</NavLink></p>
+                </div>
+                <div className='header-contact-details roboto-condensed flex justify-start items-center'>
+                    <p><NavLink to="contact-us">Call us: 0470272595</NavLink></p>
+                </div>
+            </div>
         </header >
     )
 }

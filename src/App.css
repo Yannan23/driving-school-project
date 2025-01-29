@@ -15,6 +15,13 @@
     font-style: normal;
 }
 
+.roboto-condensed {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* * {
     margin: 0;
     padding: 0;

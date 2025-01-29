@@ -59,7 +59,6 @@ const Footer = () => {
                                     <div className='foooter-contact-details flex justify-start items-center'>
                                         <i className="fa-solid fa-envelope"></i>
                                         <p><NavLink to="contact-us">khanrashed2411@gmail.com</NavLink></p>
-
                                     </div>
                                     <div className='foooter-contact-details flex justify-start items-center'>
                                         <i className="fa-solid fa-phone"></i>
