@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 const ContactUs = () => {
     return (
-        <header>
+        <div>
             <h1>My ContactUs</h1>
             <p><NavLink to="/">home</NavLink></p>
-        </header>
+        </div>
     )
 }
 

@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 const Package = () => {
     return (
-        <header>
+        <div>
             <h1>My Package</h1>
             <p><NavLink to="/">home</NavLink></p>
-        </header>
+        </div>
     )
 }
 

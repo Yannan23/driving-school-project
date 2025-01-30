@@ -2,9 +2,9 @@ import React from 'react';
 
 const Reviews = () => {
     return (
-        <header>
+        <div>
             <h1>Reviews</h1>
-        </header>
+        </div>
     )
 }
 
