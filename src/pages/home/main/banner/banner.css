@@ -7,6 +7,9 @@
     min-height: 100vh;
     padding: 7rem 5rem;
     color: var(--font-light-color);
+    width: 100%;
+    overflow: hidden;
+
 }
 
 .banner-content {

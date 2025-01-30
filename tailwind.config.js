@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+
     "./index.css",
     "./index.html",
-    "./src/App.css"
+    "./src/App.css",
+    "./src/pages/**/*.{html,js,jsx,ts,tsx}",
+
   ],
   theme: {
     extend: {
@@ -14,7 +17,7 @@ export default {
         'yellow-color': '#FDB90A',
         'orange-color': '#FF641A',
         'red-color': '#F31717',
-        'font-dark-color': '#414040',
+        'font-dark-color': '#2d2b2b',
         'light-color': '#F1F1F1'
       }
     },
