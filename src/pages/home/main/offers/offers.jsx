@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { offers as offersData } from '../../../../data/offers';
+import { packages as packagesData } from '../../../../data/packages';
+
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>
@@ -44,17 +47,11 @@ OfferCard.propTypes = {
 };
 
 const Offers = () => {
-    const offers = [
-        { title: "observation test", description: ["1 - hour lesson"], price: "$50" },
-        { title: "Beginner 1 Hour Lesson", description: ["1 - hour lesson", "3 Hours Log Book = 1 Hour"], price: "$70" },
-        { title: "Beginner 2 Hour Lesson", description: ["2 - hour lesson", "6 Hours Logbook = 2 Hours"], price: "$120", savings: "(save $20)", isHot: true },
-    ];
 
-    const packages = [
-        { title: "6 Hour Lesson Package", description: ["6 - Hour Lesson", "6 Hours Logbook = 18 Hours"], price: "$360", savings: "(save $60)", isHot: true, limitedTime: "limited time only!" },
-        { title: "10 Hour Lesson Package", description: ["10 - hour lesson", "30 Hours Logbook = 10 Hours"], price: "$600", savings: "(save $100)", isHot: true, limitedTime: "limited time only!" },
-        { title: "20 Hour Lesson Package", description: ["20 - hour lesson", "60 Hours Logbook = 20 Hours"], price: "$1200", savings: "(save $200)", isHot: true, limitedTime: "won't last long!!" },
-    ];
+    const [offers, setOffers] = useState(offersData);
+    const [packages, setPackages] = useState(packagesData);
+
+    // const packages = 
 
     return (
         <div className="w-full text-dark-color">
@@ -68,7 +65,8 @@ const Offers = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8">
-                    {offers.map((offer, index) => (
+                    {/** Map Offers */}
+                    {offers.offers.map((offer, index) => (
                         <OfferCard key={index} {...offer} />
                     ))}
                 </div>
@@ -84,7 +82,8 @@ const Offers = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8">
-                    {packages.map((pkg, index) => (
+                    {/** Map Packages */}
+                    {packages.packages.map((pkg, index) => (
                         <OfferCard key={index} {...pkg} />
                     ))}
                 </div>
