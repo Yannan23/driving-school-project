@@ -7,7 +7,7 @@ import { packages as packagesData } from '../../../../data/packages';
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>
-        <div className="relative py-8 border-2 border-gray-300 w-full bg-white" style={{ border: '1px solid #e2e8f0' }}>
+        <div className="relative py-8 w-full bg-white" style={{ border: '1px solid #0F1C2F' }}>
             {isHot && (
                 <div className="absolute -top-3 -left-3 w-8 h-8 md:w-14 md:h-14">
                     <img src="/src/assets/hot.jpg" alt="Hot Offer" className="w-full h-full" />
