@@ -1,4 +1,6 @@
 
+import './wcu-header.css'
+
 const WhyChooseUsHeader = () => {
 
     return(

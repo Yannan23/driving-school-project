@@ -1,4 +1,6 @@
 
+import './wcu-banner.css'
+
 const WhyChooseUsBanner = () => {
 
     return(

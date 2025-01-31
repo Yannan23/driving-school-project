@@ -1,0 +1,63 @@
+.wcu-comment-box {
+    text-align: center;
+    width: 80%;
+    margin: 5rem auto;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wcu-comment-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.wcu-comment-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wcu-star-box {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+}
+
+.wcu-comment-content {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.wcu-comment-author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.wcu-arrow-box {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.wcu-arrow-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.wcu-arrow-btn:hover {
+    color: var(--yellow-color);
+}

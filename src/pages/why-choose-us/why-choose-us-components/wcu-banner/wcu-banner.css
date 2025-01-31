@@ -1,0 +1,22 @@
+.wcu-banner-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: 4rem auto;
+}
+
+.wcu-banner{
+    border: .2rem solid var(--yellow-color);
+    width: 15rem;
+    height: 8rem;
+    border-radius: 1rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.wcu-stat-value{
+    font-size: 3rem;
+    font-weight: bold;
+}
