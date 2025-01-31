@@ -3,7 +3,7 @@ import Banner from './banner/banner';
 import Offers from './offers/offers'
 import OurStory from './our-story/our-story'
 import Reviews from './reviews/reviews'
-import Locations from './locations/locations'
+import Videos from './videos/videos'
 
 const Main = () => {
     return (
@@ -12,7 +12,7 @@ const Main = () => {
             <Offers />
             <OurStory />
             <Reviews />
-            <Locations />
+            <Videos />
         </>
     )
 }
