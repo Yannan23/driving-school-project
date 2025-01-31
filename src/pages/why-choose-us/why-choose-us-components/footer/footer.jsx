@@ -1,5 +1,5 @@
 
-const Footer = () => {
+const WhyChooseUsFooter = () => {
 
     return(
         <div className="why-choose-us-footer">

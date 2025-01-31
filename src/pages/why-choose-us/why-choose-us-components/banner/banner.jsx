@@ -1,5 +1,5 @@
 
-const Banner = () => {
+const WhyChooseUsBanner = () => {
 
     return(
         <div className="why-choose-us-banner-box">
@@ -34,4 +34,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default WhyChooseUsBanner

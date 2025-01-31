@@ -1,5 +1,5 @@
 
-const Labels = () => {
+const WhyChooseUsLabels = () => {
 
     return(
         <section className="why-choose-us-detailed-label-box">
@@ -65,4 +65,4 @@ const Labels = () => {
     )
 }
 
-export default Labels
+export default WhyChooseUsLabels
