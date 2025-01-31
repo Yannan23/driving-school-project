@@ -1,6 +1,4 @@
-/* Add any additional custom styles here if needed */
-
-footer h2 {
+Add any additional custom styles here if needed footer h2 {
     font-size: 1rem;
     font-weight: 700;
     color: white;
@@ -43,6 +41,7 @@ footer h2 {
     height: 3rem;
     padding: 1rem;
     color: #666;
+    border: 1px solid lightgray;
 }
 
 .footer-input::placeholder {
@@ -96,15 +95,10 @@ footer h2 {
     font-family: 'Crimson Text', serif;
 }
 
-/* input::placeholder {
+input::placeholder {
     color: #666;
     font-size: 1rem;
-} */
-/* input:focus {
-    outline: none;
-    ring: 2px;
-    ring-color: #E94234;
-} */
+}
 
 @media screen and (min-width: 768px) {
 
