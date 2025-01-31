@@ -12,4 +12,4 @@ const WhyChooseUsFooter = () => {
     )
 }
 
-export default Footer
+export default WhyChooseUsFooter
