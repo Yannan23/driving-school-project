@@ -1,5 +1,5 @@
 
-const Comment = () => {
+const WhyChooseUsComment = () => {
 
     return(
         <div className="why-choose-us-comment-box">
@@ -30,4 +30,4 @@ const Comment = () => {
     )
 }
 
-export default Comment
+export default WhyChooseUsComment

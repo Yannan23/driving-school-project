@@ -1,5 +1,5 @@
 
-const Header = () => {
+const WhyChooseUsHeader = () => {
 
     return(
         <header className="why-choose-us-header-box">
@@ -14,4 +14,4 @@ const Header = () => {
 }
 
 
-export default Header
+export default WhyChooseUsHeader
