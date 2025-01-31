@@ -2,11 +2,11 @@
 const WhyChooseUsLabels = () => {
 
     return(
-        <section className="why-choose-us-detailed-label-box">
-            <div className="label">
+        <section className="wcu-label-box">
+            <div className="wcu-label">
                 <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Professional
                     </h3>
 
@@ -18,10 +18,10 @@ const WhyChooseUsLabels = () => {
                     </ul>
                 </div>
             </div>
-            <div className="label">
+            <div className="wcu-label">
                 <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Personalized
                     </h3>
 
@@ -32,10 +32,10 @@ const WhyChooseUsLabels = () => {
                     </ul>
                 </div>
             </div>
-            <div className="label">
+            <div className="wcu-label">
                 <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Modern
                     </h3>
 
@@ -46,10 +46,10 @@ const WhyChooseUsLabels = () => {
                     </ul>
                 </div>
             </div>
-            <div className="label">
+            <div className="wcu-label">
                 <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Progress
                     </h3>
 

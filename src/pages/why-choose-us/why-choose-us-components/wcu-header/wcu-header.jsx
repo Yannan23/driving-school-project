@@ -2,14 +2,14 @@
 const WhyChooseUsHeader = () => {
 
     return(
-        <header className="why-choose-us-header-box">
-            <h1 className="header-title">
+        <div className="wcu-header-box">
+            <h1 className="wcu-header-title">
                 Why Choose NSW Safe Driving School?
             </h1>
-            <p className="header-content">
+            <p className="wcu-header-content">
                 Your Journey To Start Confident Driving Start Here
             </p>
-        </header>
+        </div>
     )
 }
 
