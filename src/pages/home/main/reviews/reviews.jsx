@@ -56,7 +56,7 @@ const Reviews = () => {
     };
 
     return (
-        <div className="w-full flex justify-between p-6 bg-gray-100">
+        <div className="w-full flex justify-between p-6 bg-gray-100 mt-10">
             <div className='w-1/2 flex flex-col justify-center gap-4'>
                 <h2 className="text-2xl font-bold text-gray-800">
                     <span className='text-2xl poppins-semibold lg:text-3xl'>Why Choose NSW SAFE</span>
