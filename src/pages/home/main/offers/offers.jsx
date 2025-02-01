@@ -4,9 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>
-        <div className="relative py-8 border-2 border-gray-300 w-full bg-white" style={{ border: '1px solid #e2e8f0' }}>
+        <div
+            className="relative py-8 w-full bg-white"
+            style={{
+                boxShadow: 'rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset'
+            }}
+        >
             {isHot && (
-                <div className="absolute -top-3 -left-3 w-8 h-8 md:w-14 md:h-14">
+                <div className="absolute -top-3 -left-3 w-8 h-8 md:-top-5 md:-left-5 md:w-14 md:h-14">
                     <img src="/src/assets/hot.jpg" alt="Hot Offer" className="w-full h-full" />
                 </div>
             )}
