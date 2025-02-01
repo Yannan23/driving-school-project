@@ -12,7 +12,7 @@ const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) =
         >
             {isHot && (
                 <div className="absolute -top-3 -left-3 w-8 h-8 md:-top-5 md:-left-5 md:w-14 md:h-14">
-                    <img src="/src/assets/hot.jpg" alt="Hot Offer" className="w-full h-full" />
+                    <img src="/public/images/hot.jpg" alt="Hot Offer" className="w-full h-full" />
                 </div>
             )}
             <div className="flex flex-col justify-center items-center gap-4">
