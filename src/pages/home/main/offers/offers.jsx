@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import Hot from '../../../../../public/images/hot.jpg'
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>
@@ -12,7 +13,7 @@ const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) =
         >
             {isHot && (
                 <div className="absolute -top-3 -left-3 w-8 h-8 md:-top-5 md:-left-5 md:w-14 md:h-14">
-                    <img src="/public/images/hot.jpg" alt="Hot Offer" className="w-full h-full" />
+                    <img src={Hot} alt="Hot Offer" className="w-full h-full" />
                 </div>
             )}
             <div className="flex flex-col justify-center items-center gap-4">
