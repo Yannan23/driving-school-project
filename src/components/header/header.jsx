@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import logo from '../../../public/images/logo.svg'
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -33,9 +34,9 @@ const Header = () => {
             {/** navbar */}
             <div className='relative w-full'>
                 <nav className='navbar flex justify-between items-center w-full relative'>
-                    {/** navbar image */}
+                    {/** navbar logo */}
                     <div className="">
-                        <img src="/src/assets/logo.svg" className='nav-logo' alt="" />
+                        <img src={logo} className='nav-logo' alt="" />
                     </div>
                     {/** navbar toggle button */}
                     <div className='toggle-button absolute' onClick={toggleNavbar}>

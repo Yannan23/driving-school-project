@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
-import logo from '/src/assets/logo.svg';
 import { NavLink } from 'react-router-dom';
+import logo from '../../../public/images/logo.svg'
 
 const Footer = () => {
     const [result, setResult] = React.useState("");
@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className='footer-info-sub-container flex'>
                         {/*footer logo */}
                         <div className='footer-logo-container flex items-center justify-center'>
-                            <img src="/src/assets/logo.svg" alt="logo" className='footer-logo w-full h-full' />
+                            <img src={logo} alt="logo" className='footer-logo w-full h-full' />
                         </div>
                         <div className='footer-info'>
                             {/*footer subscribe */}

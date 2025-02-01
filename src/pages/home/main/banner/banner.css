@@ -1,6 +1,6 @@
 .banner-container {
     margin-top: 110px;
-    background-image: url('../../../../assets/banner-image.jpg');
+    background-image: url('/public/images/banner-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
