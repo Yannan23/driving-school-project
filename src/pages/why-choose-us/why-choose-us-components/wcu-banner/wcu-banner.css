@@ -20,3 +20,37 @@
     font-size: 2.6rem;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .wcu-banner-box {
+        width: 90vw;
+        gap: 1rem;
+    }
+
+    .wcu-banner {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .wcu-stat-value {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wcu-banner-box {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .wcu-banner {
+        width: 80%;
+        height: 6rem;
+    }
+
+    .wcu-stat-value {
+        font-size: 2rem;
+    }
+}
