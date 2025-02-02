@@ -7,15 +7,6 @@ import PackageCards from "./package-components/package-cards/package-cards";
 const Package = () => {
     return (
         <body className='package-page-container'>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <PackageBanner/>
             <PackageBtnBar/>
             <PackageCards/>

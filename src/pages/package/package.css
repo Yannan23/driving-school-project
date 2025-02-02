@@ -1,25 +1,3 @@
 .package-page-container{
     overflow-x: hidden;
 }
-
-@media (max-width: 768px) {
-
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .package-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .categories {
-        flex-wrap: wrap;
-    }
-
-    .category-btn {
-        width: 100%;
-    }
-}
