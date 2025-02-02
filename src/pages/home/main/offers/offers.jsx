@@ -12,7 +12,7 @@ const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) =
             }}
         >
             {isHot && (
-                <div className="absolute -top-3 -left-3 w-8 h-8 md:-top-5 md:-left-5 md:w-14 md:h-14">
+                <div className="absolute -top-4 -left-4 w-12 h-12 md:-top-5 md:-left-5 md:!w-14 md:!h-14">
                     <img src={Hot} alt="Hot Offer" className="w-full h-full" />
                 </div>
             )}
@@ -63,17 +63,16 @@ const Offers = () => {
     ];
 
     return (
-        <div className="w-full text-dark-color">
+        <div className="w-full text-dark-color px-8">
             {/* Offers */}
             <section className="my-8 flex flex-col gap-4 md:my-12">
                 <h2
-                    className='poppins-semibold p-4 md:p-8 md:text-3xl lg:text-4xl text-center mb-6 md:mb-8'
-                    style={{ fontSize: '2rem' }}
+                    className='poppins-semibold p-4 !text-2xl md:p-8 md:!text-3xl lg:!text-4xl text-center mb-6 md:mb-8'
                 >
                     CURRENT OFFERS
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 px-4 md:px-8">
                     {offers.map((offer, index) => (
                         <OfferCard key={index} {...offer} />
                     ))}
@@ -89,7 +88,7 @@ const Offers = () => {
                     PACKAGES
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 px-4 md:px-8">
                     {packages.map((pkg, index) => (
                         <OfferCard key={index} {...pkg} />
                     ))}

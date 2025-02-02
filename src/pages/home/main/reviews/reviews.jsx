@@ -56,7 +56,7 @@ const Reviews = () => {
     };
 
     return (
-        <div className="w-full md:flex justify-between p-6 bg-gray-100 mt-10">
+        <div className="w-full md:flex justify-between p-8 bg-gray-100 mt-10">
             <div className='w-full mb-4 md:w-1/2 flex flex-col justify-center gap-4'>
                 <h2 className="text-2xl pt-4 font-bold text-gray-800">
                     <span className='text-2xl poppins-semibold lg:text-3xl'>Why Choose NSW SAFE</span>
@@ -66,8 +66,8 @@ const Reviews = () => {
                 </p>
             </div>
             <div id="default-carousel" className="relative w-full md:w-1/2 bg-white" data-carousel="slide">
-                <div className="relative h-60 md:h-96 overflow-hidden rounded-lg shadow-lg">
-                    <div className='w-full flex justify-center'>
+                <div className="relative h-80 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                    <div className='w-full flex justify-center p-4 h-full'>
                         {slides.map((slide, index) => (
                             <div key={index} className={`absolute w-3/4 h-full flex items-center transition-opacity duration-700 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
                                 <div className="bg-white p-6 h-full flex flex-col justify-center space-y-10">
@@ -83,7 +83,7 @@ const Reviews = () => {
                         ))}
                     </div>
                     {/* Previous and Next Buttons */}
-                    <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={goToPrevSlide}>
+                    <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full p-4 cursor-pointer group focus:outline-none" onClick={goToPrevSlide}>
                         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                             <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
@@ -91,7 +91,7 @@ const Reviews = () => {
                             <span className="sr-only">Previous</span>
                         </span>
                     </button>
-                    <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={goToNextSlide}>
+                    <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full p-4 cursor-pointer group focus:outline-none" onClick={goToNextSlide}>
                         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                             <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />

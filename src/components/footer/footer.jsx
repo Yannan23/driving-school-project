@@ -31,7 +31,7 @@ const Footer = () => {
 
     return (
         <footer className='bg-dark-color text-white-color flex flex-col items-center justify-center'>
-            <div className='w-full flex flex-col gap-5 py-4 items-center md:!flex-row md:!items-start sm:!flex-row sm:!items-start md:!p-8 lg:!gap-8'>
+            <div className='w-full flex flex-col gap-5 py-4 items-center justify-center sm:!flex-row sm:!items-start sm:!justify-end md:!p-8 lg:!gap-8 lg:!px-12'>
 
                 {/*footer logo */}
                 <img src={logo} alt="logo" className='w-[20%] !max-w-40' />
