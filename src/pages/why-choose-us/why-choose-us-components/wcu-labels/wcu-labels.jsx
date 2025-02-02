@@ -1,12 +1,17 @@
+import imageProfessional from './wcu-images/wcu-logo-professional.png'
+import imagePersonalized from './wcu-images/wcu-logo-personalized.png'
+import imageModern from './wcu-images/wcu-logo-modern.png'
+import imageProgress from './wcu-images/wcu-logo-progress.png'
+import './wcu-labels.css'
 
 const WhyChooseUsLabels = () => {
 
     return(
-        <section className="why-choose-us-detailed-label-box">
-            <div className="label">
-                <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+        <section className="wcu-label-box">
+            <div className="wcu-label">
+                <img src={imageProfessional} alt="label logo" />
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Professional
                     </h3>
 
@@ -18,10 +23,10 @@ const WhyChooseUsLabels = () => {
                     </ul>
                 </div>
             </div>
-            <div className="label">
-                <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+            <div className="wcu-label">
+                <img src={imagePersonalized} alt="label image"/>
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Personalized
                     </h3>
 
@@ -32,10 +37,10 @@ const WhyChooseUsLabels = () => {
                     </ul>
                 </div>
             </div>
-            <div className="label">
-                <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+            <div className="wcu-label">
+                <img src={imageModern} alt="label image"/>
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Modern
                     </h3>
 
@@ -46,10 +51,10 @@ const WhyChooseUsLabels = () => {
                     </ul>
                 </div>
             </div>
-            <div className="label">
-                <img src="" alt="label image"/>
-                <div className="content-box">
-                    <h3 className="content-title">
+            <div className="wcu-label">
+                <img src={imageProgress} alt="label image"/>
+                <div className="wcu-content-box">
+                    <h3 className="wcu-content-title">
                         Progress
                     </h3>
 
