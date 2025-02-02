@@ -1,0 +1,112 @@
+.package-cards-box{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.package-cards-box-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.package-cards-card{
+    border: 2px solid var(--yellow-color);
+    border-radius: .5rem;
+    height: 15rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    position: relative
+}
+
+.package-cards-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    color: var(--font-light-color);
+    border-radius: .1rem;
+    padding: .8rem;
+}
+
+.package-cards-card-name {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.package-cards-card-price{
+    color: #fbbf24;
+    font-size: 24px;
+    font-weight: bold;
+    transform: translateX(-5rem);
+}
+
+.package-cards-card-content-box{
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.package-cards-card-content ul{
+    list-style-type: disc;
+}
+
+.package-cards-card-content ul li{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.package-cards-card-btn{
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    padding: .5rem 1rem;
+    background-color: var(--yellow-color);
+    border-radius: .5rem;
+    color: var(--font-light-color);
+    cursor: pointer;
+    transition: ease .2s;
+}
+
+.package-cards-card-btn:hover{
+    background-color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+    .package-cards-box {
+        width: 95vw;
+    }
+
+    .package-cards-box-title {
+        font-size: 1.6rem;
+    }
+
+    .package-cards-card {
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .package-cards-card-header {
+        flex-direction: column; /* Stack name and price */
+        align-items: flex-start;
+    }
+
+    .package-cards-card-name {
+        font-size: 1.1rem;
+    }
+
+    .package-cards-card-price {
+        font-size: 20px;
+    }
+
+    .package-cards-card-content-box {
+        margin-left: 0.5rem;
+    }
+
+    .package-cards-card-btn {
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
