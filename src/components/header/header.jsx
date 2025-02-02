@@ -8,16 +8,19 @@ const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const navRef = useRef(null);
+    const dropdownRef = useRef(null);
 
-    const toggleNavbar = () => {
-        setIsActive(!isActive);
+    const showDropdown = () => {
+        setIsActive(true);
+    };
+
+    const hideDropdown = () => {
+        setIsActive(false);
     };
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log('Scroll Y:', window.scrollY);
-
-            if (window.scrollY > 150) { // Simplified condition for testing
+            if (window.scrollY > 150) {
                 setIsScrolled(true);
                 setIsVisible(false);
             } else {
@@ -25,25 +28,32 @@ const Header = () => {
                 setIsVisible(true);
             }
         }
+
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     return (
         <header ref={navRef} className={`flex flex-col justify-center items-center w-full bg-dark-color text-white-color your-nav-classes ${isScrolled ? 'scrolled' : ''}`} >
-            {/** navbar */}
             <div className='relative w-full'>
                 <nav className='navbar flex justify-between items-center w-full relative'>
-                    {/** navbar logo */}
                     <div className="">
                         <img src={logo} className='nav-logo' alt="" />
                     </div>
-                    {/** navbar toggle button */}
-                    <div className='toggle-button absolute' onClick={toggleNavbar}>
+                    <div
+                        className='toggle-button absolute'
+                        onMouseEnter={showDropdown}
+                    >
                         <div className=""><i className="fa-solid fa-bars"></i></div>
                     </div>
-                    {/** navbar links and button*/}
-                    <div className='navbar-links-container flex flex-col'>
+                    <div
+                        className='navbar-links-container flex flex-col'
+                        ref={dropdownRef}
+                        onMouseLeave={hideDropdown}
+                    >
                         <ul className={`navbar-links im-fell-double-pica-sc-regular ${isActive ? 'active' : ''}`}>
                             <li><NavLink to="/">home</NavLink></li>
                             <li><NavLink to="why-choose-us">why choose us</NavLink></li>
@@ -51,12 +61,13 @@ const Header = () => {
                             <li><NavLink to="location">location</NavLink></li>
                             <li><NavLink to="contact-us">contact us</NavLink></li>
                             <div className="nav-btn-container flex justify-center">
-                                <button className='nav-btn flex justify-center items-center" cursor-pointer bg-yellow-color'><NavLink to="contact-us">BOOK NOW</NavLink></button>
+                                <button className='nav-btn flex justify-center items-center cursor-pointer bg-yellow-color'>
+                                    <NavLink to="contact-us">BOOK NOW</NavLink>
+                                </button>
                             </div>
                         </ul>
                     </div>
                 </nav >
-                {/** header contact info */}
                 <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:px-8 lg:px-16`}>
                     <div className='roboto-condensed flex justify-start items-center gap-2 md:gap-4'>
                         <i className="fa-solid fa-phone"></i>
