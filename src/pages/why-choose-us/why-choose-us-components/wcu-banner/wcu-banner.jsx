@@ -1,31 +1,33 @@
 
+import './wcu-banner.css'
+
 const WhyChooseUsBanner = () => {
 
     return(
-        <div className="why-choose-us-banner-box">
-            <section className="banner">
-                <h3 className="stat-value">
+        <div className="wcu-banner-box">
+            <section className="wcu-banner">
+                <h3 className="wcu-stat-value">
                     98%
                 </h3>
-                <p className="banner-name">
+                <p className="wcu-banner-name">
                     First-Time Pass Rate
                 </p>
             </section>
             
-            <section className="banner">
-                <h3 className="stat-value">
+            <section className="wcu-banner">
+                <h3 className="wcu-stat-value">
                     5+
                 </h3>
-                <p className="banner-name">
+                <p className="wcu-banner-name">
                     Years Experience
                 </p>
             </section>
 
-            <section className="banner">
-                <h3 className="stat-value">
+            <section className="wcu-banner">
+                <h3 className="wcu-stat-value">
                     1000+
                 </h3>
-                <p className="banner-name">
+                <p className="wcu-banner-name">
                     Successful Student
                 </p>
             </section>

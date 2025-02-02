@@ -1,0 +1,21 @@
+
+.wcu-header-box{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--yellow-color);
+    margin-top: 8rem;
+    height: 14rem;
+}
+
+.wcu-header-title{
+    font-size: 3rem;
+    color: var(--font-light-color);
+    margin: 2rem;
+}
+
+.wcu-header-content{
+    font-size: 1rem;
+    color: var(--font-dark-color);
+    margin: 1rem 2rem;
+}

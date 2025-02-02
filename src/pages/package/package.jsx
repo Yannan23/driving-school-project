@@ -1,13 +1,25 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-// import './header.css';
+import './package.css'
+import PackageBanner from "./package-components/package-banner/package-banner";
+import PackageBtnBar from "./package-components/package-btn-bar/package-btn-bar";
+import PackageCards from "./package-components/package-cards/package-cards";
+
 
 const Package = () => {
     return (
-        <div>
-            <h1>My Package</h1>
-            <p><NavLink to="/">home</NavLink></p>
-        </div>
+        <body className='package-page-container'>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <PackageBanner/>
+            <PackageBtnBar/>
+            <PackageCards/>
+        </body>
     )
 }
 
