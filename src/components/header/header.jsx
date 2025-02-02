@@ -57,12 +57,10 @@ const Header = () => {
                     </div>
                 </nav >
                 {/** header contact info */}
-                <div className={`${isVisible ? 'visible' : 'hidden'} header-contact-info-details-container flex justify-between w-full`}>
-                    <div className='header-contact-details roboto-condensed flex justify-start items-center gap-1'>
-                        <p><NavLink to="contact-us">Email: khanrashed2411@gmail.com</NavLink></p>
-                    </div>
-                    <div className='header-contact-details roboto-condensed flex justify-start items-center'>
-                        <p><NavLink to="contact-us">Call us: 0470272595</NavLink></p>
+                <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:px-8 lg:px-16`}>
+                    <div className='roboto-condensed flex justify-start items-center gap-2 md:gap-4'>
+                        <i className="fa-solid fa-phone"></i>
+                        <p className='hover:text-amber-400'><NavLink to="contact-us">Call us: 0470272595</NavLink></p>
                     </div>
                 </div>
             </div>
