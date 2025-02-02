@@ -61,3 +61,68 @@
 .wcu-arrow-btn:hover {
     color: var(--yellow-color);
 }
+
+@media (max-width: 768px) {
+    .wcu-comment-box {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .wcu-comment-title {
+        font-size: 1.6rem;
+    }
+
+    .wcu-comment-card {
+        max-width: 500px;
+        padding: 1.2rem;
+    }
+
+    .wcu-star-box {
+        font-size: 1.3rem;
+    }
+
+    .wcu-comment-content {
+        font-size: 0.95rem;
+    }
+
+    .wcu-arrow-btn {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wcu-comment-box {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .wcu-comment-title {
+        font-size: 1.4rem;
+    }
+
+    .wcu-comment-card {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .wcu-star-box {
+        font-size: 1.2rem;
+    }
+
+    .wcu-comment-content {
+        font-size: 0.9rem;
+    }
+
+    .wcu-comment-author {
+        font-size: 0.9rem;
+    }
+
+    .wcu-arrow-box {
+        gap: 0.8rem;
+    }
+
+    .wcu-arrow-btn {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}

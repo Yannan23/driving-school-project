@@ -27,3 +27,36 @@
     background-color: white;
     color: var(--yellow-color);
 }
+
+@media (max-width: 768px) {
+    .wcu-footer {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .wcu-footer-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .wcu-footer-btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .wcu-footer {
+        padding: 1rem;
+    }
+
+    .wcu-footer-title {
+        font-size: 1.8rem;
+    }
+
+    .wcu-footer-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+}

@@ -36,3 +36,56 @@
     margin-bottom: .8rem;
 }
 
+@media (max-width: 768px) {
+    .wcu-label-box {
+        width: 80vw;
+    }
+
+    .wcu-label {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .wcu-label img {
+        margin: 0 auto 1rem auto; 
+        width: 80px;
+        height: 80px;
+    }
+
+    .wcu-content-title {
+        font-size: 1.6rem;
+    }
+
+    .wcu-content-box ul {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wcu-label-box {
+        width: 90%;
+    }
+
+    .wcu-label {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .wcu-label img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+
+    .wcu-content-title {
+        font-size: 1.4rem;
+    }
+
+    .wcu-content-box ul li {
+        font-size: 0.9rem;
+    }
+}
+
