@@ -9,7 +9,6 @@ const Package = () => {
         <body className='package-page-container'>
             <PackageBanner/>
             <PackageBtnBar/>
-            <PackageCards/>
         </body>
     )
 }
