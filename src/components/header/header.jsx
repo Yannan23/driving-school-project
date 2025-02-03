@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 import logo from '../../../public/images/logo.svg'
+import CallButton from '../buttons/call-button';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -40,7 +41,7 @@ const Header = () => {
         <header ref={navRef} className={`flex flex-col justify-center items-center w-full bg-dark-color text-white-color your-nav-classes ${isScrolled ? 'scrolled' : ''}`} >
             <div className='relative w-full'>
                 <nav className='navbar flex justify-between items-center w-full relative'>
-                    <div className="">
+                    <div>
                         <img src={logo} className='nav-logo' alt="" />
                     </div>
                     <div
@@ -68,10 +69,10 @@ const Header = () => {
                         </ul>
                     </div>
                 </nav >
-                <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:px-8 lg:px-16`}>
+                <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:!px-8 lg:!px-16`}>
                     <div className='roboto-condensed flex justify-start items-center gap-2 md:gap-4'>
                         <i className="fa-solid fa-phone"></i>
-                        <p className='hover:text-amber-400'><NavLink to="contact-us">Call us: 0470272595</NavLink></p>
+                        <CallButton />
                     </div>
                 </div>
             </div>

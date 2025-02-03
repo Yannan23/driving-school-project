@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../public/images/logo.svg'
+import CallButton from '../buttons/call-button';
 
 const Footer = () => {
     const [result, setResult] = React.useState("");
@@ -62,7 +63,7 @@ const Footer = () => {
                             </div>
                             <div className='flex justify-start items-center gap-2'>
                                 <i className="fa-solid fa-phone"></i>
-                                <p className='hover:text-amber-400 cursor-pointer'><NavLink to="contact-us">0470272595</NavLink></p>
+                                <CallButton />
                             </div>
                         </div>
                         {/*social media */}
