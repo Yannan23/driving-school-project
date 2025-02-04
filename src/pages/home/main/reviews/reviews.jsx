@@ -56,13 +56,13 @@ const Reviews = () => {
     };
 
     return (
-        <div className="w-full md:flex justify-between p-8 bg-gray-100 mt-10">
+        <div className="w-full md:flex justify-between p-8 bg-light mt-10">
             <div className='w-full mb-4 md:w-1/2 flex flex-col justify-center gap-4'>
-                <h2 className="text-2xl pt-4 font-bold text-gray-800">
-                    <span className='text-2xl poppins-semibold lg:text-3xl'>Why Choose NSW SAFE</span>
+                <h2 className="text-2xl pt-4 font-bold text-li">
+                    <span className='text-2xl text-gray-100 font-bold lg:text-3xl'>Why Choose NSW SAFE</span>
                 </h2>
-                <p className="text-gray-600 text-justify md:pr-8">
-                    <span className='text-orange-400 roboto-condensed'>NSW SAFE Drving School </span>is one of the new dynamic safe driving schools in Sydney. To become a skilled driver, you should always choose a professional safe driving school with a safe driving car and vast knowledge of driving around Sydney, especially in NSW. We assess each student very carefully, knowing that everyone has different skills and comes from different ethnic backgrounds. Our car features the latest technology with dual control and leather interior, allowing you to drive relaxedly during the lesson. Our lessons are stress-free, simple, and effective. We care about your valuable time and money, which is why we care from day one. We ensure you get 100% from us while learning. We evaluate your learning progress week by week to keep you on the right track. At the end, we smile at your success, and you will have great memories with NSW SAFE driving school.
+                <p className="text-light text-justify md:pr-8">
+                    <span className='text-orange font-Roboto-Condensed'>NSW SAFE Drving School </span>is one of the new dynamic safe driving schools in Sydney. To become a skilled driver, you should always choose a professional safe driving school with a safe driving car and vast knowledge of driving around Sydney, especially in NSW. We assess each student very carefully, knowing that everyone has different skills and comes from different ethnic backgrounds. Our car features the latest technology with dual control and leather interior, allowing you to drive relaxedly during the lesson. Our lessons are stress-free, simple, and effective. We care about your valuable time and money, which is why we care from day one. We ensure you get 100% from us while learning. We evaluate your learning progress week by week to keep you on the right track. At the end, we smile at your success, and you will have great memories with NSW SAFE driving school.
                 </p>
             </div>
             <div id="default-carousel" className="relative w-full md:w-1/2 bg-white" data-carousel="slide">
@@ -73,7 +73,7 @@ const Reviews = () => {
                                 <div className="bg-white p-6 h-full flex flex-col justify-center space-y-10">
                                     <div className="flex flex-col gap-4">
                                         <h3 className="">
-                                            <span className='text-amber-500 md:text-4xl'>"{slide.title}“</span>
+                                            <span className='text-orange md:text-4xl'>"{slide.title}“</span>
                                         </h3>
                                         <p className="text-gray-600">{slide.content}</p>
                                     </div>

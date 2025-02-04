@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 import logo from '../../../public/images/logo.svg'
+import CallButton from '../buttons/call-button';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -54,7 +55,7 @@ const Header = () => {
                         ref={dropdownRef}
                         onMouseLeave={hideDropdown}
                     >
-                        <ul className={`navbar-links im-fell-double-pica-sc-regular ${isActive ? 'active' : ''}`}>
+                        <ul className={`navbar-links font-Fell ${isActive ? 'active' : ''}`}>
                             <li><NavLink to="/">home</NavLink></li>
                             <li><NavLink to="why-choose-us">why choose us</NavLink></li>
                             <li><NavLink to="package">package</NavLink></li>
@@ -69,9 +70,9 @@ const Header = () => {
                     </div>
                 </nav >
                 <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:px-8 lg:px-16`}>
-                    <div className='roboto-condensed flex justify-start items-center gap-2 md:gap-4'>
+                    <div className='font-font-Roboto-Condensed flex justify-start items-center gap-2 md:gap-4'>
                         <i className="fa-solid fa-phone"></i>
-                        <p className='hover:text-amber-400'><NavLink to="contact-us">Call us: 0470272595</NavLink></p>
+                        <CallButton />
                     </div>
                 </div>
             </div>

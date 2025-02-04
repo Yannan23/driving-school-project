@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import Hot from '../../../../../public/images/hot.jpg'
+import Road from '../../../../../public/images/road.png';
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>
@@ -17,21 +18,23 @@ const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) =
                 </div>
             )}
             <div className="flex flex-col justify-center items-center gap-4">
-                <h3 className="text-base md:text-lg poppins-semibold mb-4 capitalize">{title}</h3>
-                {description.map((line, index) => (
-                    <p key={index} className="text-sm text-gray-600">{line}</p>
-                ))}
+                <h3 className="text-base md:text-lg !font-bold mb-4 capitalize">{title}</h3>
+                <div className="flex flex-col gap-2">
+                    {description.map((line, index) => (
+                        <p key={index} className="text-sm text-gray-600 capitalize px-2 text-center">{line}</p>
+                    ))}
+                </div>
                 <p className="text-xl md:text-2xl font-bold mt-2 text-gray-800">{price}</p>
                 {savings && <p className="text-sm text-gray-600">{savings}</p>}
             </div>
 
             <div className="absolute -bottom-5 left-0 w-full flex justify-center">
-                <NavLink to="contact-us" className="w-4/5 py-2 px-4 bg-yellow-500 text-white! text-center capitalize transition-colors duration-300 hover:bg-orange-500">
+                <NavLink to="contact-us" className="w-4/5 py-2 px-4 bg-yellow text-white! text-center capitalize transition-colors duration-300 hover:bg-orange-500">
                     BOOK NOW
                 </NavLink>
             </div>
             {limitedTime && (
-                <div className='h-10 w-full bg-orange-500 flex justify-center items-center text-white mt-4'>
+                <div className='h-10 w-full bg-orange flex justify-center items-center text-white mt-4'>
                     <p className='capitalize'>{limitedTime}</p>
                 </div>
             )}
@@ -60,15 +63,15 @@ const Offers = () => {
         { title: "6 Hour Lesson Package", description: ["6 - Hour Lesson", "6 Hours Logbook = 18 Hours"], price: "$360", savings: "(save $60)", isHot: true, limitedTime: "limited time only!" },
         { title: "10 Hour Lesson Package", description: ["10 - hour lesson", "30 Hours Logbook = 10 Hours"], price: "$600", savings: "(save $100)", isHot: true, limitedTime: "limited time only!" },
         { title: "20 Hour Lesson Package", description: ["20 - hour lesson", "60 Hours Logbook = 20 Hours"], price: "$1200", savings: "(save $200)", isHot: true, limitedTime: "won't last long!!" },
-        { title: "RMS DRIVING TEST", description: ["* Pick up & Drop Off Include", "*30 Mins Skim Through  Pre Road Test Before Exam", "*Use Instructor RMS Approved Vehicle"], isHot: false, price: "$200", limitedTime: "limited time only!" },
+        { title: "RMS DRIVING TEST", description: ["* Pick up & Drop Off Include", "*30 Mins Skim Through  Pre Road Test Before Exam", "*Use Instructor RMS Approved Vehicle"], isHot: false, price: "$200", limitedTime: false },
     ];
 
     return (
-        <div className="w-full text-dark-color px-8">
+        <div className="w-full text-dark-color px-8 bg-cover bg-right bg-repeat" style={{ backgroundImage: `url(${Road})` }}>
             {/* Offers */}
             <section className="my-8 flex flex-col gap-4 md:my-12">
                 <h2
-                    className='poppins-semibold p-4 !text-2xl md:p-8 md:!text-3xl lg:!text-4xl text-center mb-6 md:mb-8'
+                    className='!font-bold p-4 !text-2xl md:p-8 md:!text-3xl lg:!text-4xl text-center mb-6 md:mb-8'
                 >
                     CURRENT OFFERS
                 </h2>
@@ -83,8 +86,10 @@ const Offers = () => {
             {/* Packages */}
             <section className="my-8 flex flex-col gap-6 md:my-12">
                 <h2
-                    className='poppins-semibold pt-2 md:p-8 md:text-3xl lg:text-4xl text-center mb-6 md:mb-8'
-                    style={{ fontSize: '2rem' }}
+                    className='text-white !font-bold !text-2xl pt-2 md:p-8 md:!text-3xl lg:!text-4xl text-center mb-6 md:mb-8'
+                    style={{
+                        fontSize: '2rem'
+                    }}
                 >
                     PACKAGES
                 </h2>
@@ -97,7 +102,7 @@ const Offers = () => {
             </section>
 
             <div className='flex justify-center items-center text-white my-10 md:my-16'>
-                <NavLink to="package" className="py-2 px-4 w-4/5 md:w-3/5 lg:w-2/5 bg-gray-800 text-white text-center capitalize transition-colors duration-300 hover:bg-red-600">
+                <NavLink to="package" className="py-2 px-4 w-4/5 md:w-3/5 lg:w-2/5 bg-dark text-white text-center capitalize transition-colors duration-300 hover:bg-red-600">
                     SEE ALL COURSES
                 </NavLink>
             </div>
