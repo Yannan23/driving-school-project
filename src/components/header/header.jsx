@@ -41,7 +41,7 @@ const Header = () => {
         <header ref={navRef} className={`flex flex-col justify-center items-center w-full bg-dark-color text-white-color your-nav-classes ${isScrolled ? 'scrolled' : ''}`} >
             <div className='relative w-full'>
                 <nav className='navbar flex justify-between items-center w-full relative'>
-                    <div>
+                    <div className="">
                         <img src={logo} className='nav-logo' alt="" />
                     </div>
                     <div
@@ -55,7 +55,7 @@ const Header = () => {
                         ref={dropdownRef}
                         onMouseLeave={hideDropdown}
                     >
-                        <ul className={`navbar-links im-fell-double-pica-sc-regular ${isActive ? 'active' : ''}`}>
+                        <ul className={`navbar-links font-Fell ${isActive ? 'active' : ''}`}>
                             <li><NavLink to="/">home</NavLink></li>
                             <li><NavLink to="why-choose-us">why choose us</NavLink></li>
                             <li><NavLink to="package">package</NavLink></li>
@@ -69,8 +69,8 @@ const Header = () => {
                         </ul>
                     </div>
                 </nav >
-                <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:!px-8 lg:!px-16`}>
-                    <div className='roboto-condensed flex justify-start items-center gap-2 md:gap-4'>
+                <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:px-8 lg:px-16`}>
+                    <div className='font-font-Roboto-Condensed flex justify-start items-center gap-2 md:gap-4'>
                         <i className="fa-solid fa-phone"></i>
                         <CallButton />
                     </div>
