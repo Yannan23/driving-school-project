@@ -1,0 +1,13 @@
+:root {
+    --background-color: #0F1C2F;
+    --background-light-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --yellow-color: #FDB90A;
+    --orange-color: #FF641A;
+    --red-color: #F31717;
+    --font-dark-color: #2d2b2b;
+    --font-light-color: #F1F1F1;
+    --font-Fell: "IM Fell Double Pica SC", serif;
+    --font-Roboto-Condensed: "Roboto Condensed", serif;
+    --font-Roboto: "Roboto", serif;
+}

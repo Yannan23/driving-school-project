@@ -32,7 +32,7 @@ const Footer = () => {
 
                         {/* usefull links */}
                         <div className='flex flex-col items-start gap-2 w-full md:!w-[40%]'>
-                            <h2 className='font-Fell !text-2xl md:!text-4xl'>usefull links</h2>
+                            <h2 className='font-Fell !text-2xl md:!text-4xl'>useful links</h2>
                             <ul className='navbar-link flex flex-col font-Fell'>
                                 <li><NavLink to="/">home</NavLink></li>
                                 <li><NavLink to="why-choose-us">why choose us</NavLink></li>

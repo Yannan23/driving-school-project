@@ -130,7 +130,6 @@
     .package-cards-card {
         height: auto;
         border-width: 1px;
-        padding: 1rem;
         padding-bottom: 3rem;
     }
 
@@ -148,7 +147,7 @@
     }
 
     .package-cards-card-content-box {
-        padding: 0.5rem;
+        padding: .5rem 1.5rem;
     }
 
     .package-cards-card-btn {
