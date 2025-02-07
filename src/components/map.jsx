@@ -40,7 +40,7 @@ function Map() {
 
     return (
         <>
-            <div className='w-full h-[300px] bg-amber-400' id='map-container' ref={mapContainerRef}>
+            <div className='!w-full h-[220px] bg-amber-400' id='map-container' ref={mapContainerRef}>
             </div>
         </>
     );
