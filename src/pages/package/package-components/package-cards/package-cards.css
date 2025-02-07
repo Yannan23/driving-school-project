@@ -33,11 +33,15 @@
     letter-spacing: 1px;
 }
 
+.package-cards-card-limited-label{
+    font-size: 1.3rem;
+    color: var(--orange-color);
+}
+
 .package-cards-card-price{
     color: #fbbf24;
     font-size: 24px;
     font-weight: bold;
-    transform: translateX(-5rem);
 }
 
 .package-cards-card-content-box{
@@ -57,8 +61,8 @@
 
 .package-cards-card-btn{
     position: absolute;
-    right: 4rem;
-    bottom: 4rem;
+    right: 2rem;
+    bottom: 1rem;
     padding: .5rem 1rem;
     background-color: var(--yellow-color);
     border-radius: .5rem;
@@ -86,7 +90,7 @@
     }
 
     .package-cards-card-header {
-        flex-direction: column; /* Stack name and price */
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -94,8 +98,12 @@
         font-size: 1.1rem;
     }
 
+    .package-cards-card-limited-label{
+        font-size: 1rem;
+    }
+
     .package-cards-card-price {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     .package-cards-card-content-box {
@@ -104,8 +112,48 @@
 
     .package-cards-card-btn {
         right: 1rem;
-        bottom: 1rem;
+        bottom: .1rem;
         padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .package-cards-box {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .package-cards-box-title {
+        font-size: 1.4rem;
+    }
+
+    .package-cards-card {
+        height: auto;
+        border-width: 1px;
+        padding-bottom: 3rem;
+    }
+
+    .package-cards-card-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .package-cards-card-name {
+        font-size: 1rem;
+    }
+
+    .package-cards-card-price {
+        font-size: 18px;
+    }
+
+    .package-cards-card-content-box {
+        padding: .5rem 1.5rem;
+    }
+
+    .package-cards-card-btn {
+        bottom: .1rem;
+        font-size: 0.9rem;
+        margin: 1rem auto;
     }
 }
 

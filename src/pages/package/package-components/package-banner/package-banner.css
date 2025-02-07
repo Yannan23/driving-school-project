@@ -4,7 +4,7 @@
     flex-direction: column;
     width: 100vw;
     background-color: var(--yellow-color);
-    margin-top: -5rem;
+    margin-top: 8rem;
     height: 14rem;
 }
 
@@ -37,7 +37,7 @@
 
 @media (max-width: 480px) {
     .package-banner-box {
-        margin-top: -3rem;
+        margin-top: 6rem;
         padding: 1rem;
     }
 
