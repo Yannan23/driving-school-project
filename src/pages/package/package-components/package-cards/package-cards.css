@@ -59,6 +59,11 @@
     font-weight: 500;
 }
 
+.package-cards-card-content-save{
+    color: var(--orange-color);
+    font-weight: bolder;
+}
+
 .package-cards-card-btn{
     position: absolute;
     right: 2rem;
