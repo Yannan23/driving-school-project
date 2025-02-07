@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import Logo from '../../public/images/logo.svg';
 
 function Map() {
     const mapRef = useRef();
@@ -22,7 +21,7 @@ function Map() {
             // Create a custom marker element
             const el = document.createElement('div');
             el.className = 'marker';
-            el.style.backgroundImage = 'url(../../public/images/logo.svg)';
+            el.style.backgroundImage = 'url(/public/images/logo.svg)';
             el.style.width = '32px';
             el.style.height = '32px';
             el.style.backgroundSize = '100%';
