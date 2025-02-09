@@ -43,7 +43,6 @@ const Header = () => {
                 <nav className='navbar flex justify-between items-center w-full relative'>
                     <div className="">
                         <NavLink to="/"><img src={logo} className='nav-logo' alt="" /></NavLink>
-
                     </div>
                     <div
                         className='toggle-button absolute'
