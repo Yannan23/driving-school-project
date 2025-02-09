@@ -69,7 +69,6 @@ const Footer = () => {
                     <div className='flex flex-col items-center justify-center sm:!flex-row sm:gap-2'>
                         <p>© 2025 NSW Safe Driving School</p>
                         <p className='sm:!border-l-1 !border-solid !border-gray-500 pl-2'>ABN - 12883995421</p>
-                        <p className='sm:!border-l-1 !border-solid !border-gray-500 pl-2'>KeyWork</p>
                     </div>
 
                     <div className='flex flex-col justify-center items-center'>
