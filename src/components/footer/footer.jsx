@@ -52,7 +52,7 @@ const Footer = () => {
                         <div className='flex flex-col gap-2 md:w-full'>
                             <div className='flex justify-start items-center gap-2'>
                                 <i className="fa-solid fa-envelope"></i>
-                                <p className='hover:text-yellow cursor-pointer'>25-27 French Avenue Bankstown</p>
+                                <p className='hover:text-yellow cursor-pointer'>25-29 French Avenue Bankstown</p>
                             </div>
                             <div className='flex justify-start items-center gap-2'>
                                 <Map />
