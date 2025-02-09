@@ -33,12 +33,17 @@ const ContactUs = () => {
                     <form onSubmit={handleSubmit} className='w-full flex flex-col gap-2 lg:gap-3'>
                         <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4' placeholder='Name' />
                         <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize' placeholder='email' />
-                        <input type="number" value={number} onChange={(e) => { setNumber(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize' placeholder='phone' />
+                        <input type="text" value={number} onChange={(e) => {
+                            const value = e.target.value;
+                            if (/^\d*$/.test(value)) { // Allow only digits (no letters, no special characters)
+                                setNumber(value);
+                            }
+                        }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4' placeholder='phone' />
                         <DropdownInput />
                         <textarea value={textArea} onChange={(e) => { setTextArea(e.target.value) }} className='bg-yellow-400 h-40 w-full px-4 !py-2 capitalize text-start' placeholder='message' />
 
                         {/**recaptcha */}
-                        <ReCAPTCHA
+                        < ReCAPTCHA
                             ref={recaptchaRef}
                             sitekey="6Lc9itEqAAAAAED4du2DdXh6NKf_fQn-pMvZ5nr3"
                             onChange={(val) => setcapVal(val)}
