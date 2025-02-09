@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const DropdownInput = () => {
 
     const [selectOption, setSelectOption] = useState('');
     const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     const options = ['Bankstown', 'Canterbury', 'Georges Hall', 'Hurtsville', 'Liverpool', 'Rhodes', 'Campsie', 'Lakembha', 'Wiley Park', 'Lidcomb', 'Condell Park', 'Roseland', 'Burwood', 'Yagoona', 'Cabramatta'
     ]
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [])
+
     return (
         <div>
-            <input type='text' className='bg-yellow-400 h-10 w-full px-4 capitalize' value={selectOption} onClick={() => setIsOpen(!isOpen)} placeholder='suburb'>
+            <input type='text' className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize' value={selectOption} onClick={() => setIsOpen(!isOpen)} readOnly placeholder='suburb'>
             </input>
             {
                 isOpen && (
