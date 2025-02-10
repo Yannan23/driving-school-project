@@ -1,0 +1,52 @@
+
+.location-banner-box{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--yellow-color);
+    margin-top: 8rem;
+    height: 14rem;
+}
+
+.location-banner-title{
+    font-size: 3rem;
+    color: var(--font-light-color);
+    margin: 2rem;
+}
+
+.location-banner-content{
+    font-size: 1rem;
+    color: var(--font-dark-color);
+    margin: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .location-banner-box {
+        padding: 1.5rem 1rem;
+    }
+
+    .location-banner-title {
+        font-size: 2rem;
+    }
+
+    .location-banner-content {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-banner-box {
+        margin-top: 6rem;
+        padding: 1rem;
+    }
+
+    .location-banner-title {
+        font-size: 1.8rem;
+    }
+
+    .location-banner-content {
+        font-size: 0.9rem;
+        max-width: 95%;
+    }
+}
