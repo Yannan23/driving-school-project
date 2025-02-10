@@ -23,7 +23,7 @@ const ContactUs = () => {
         <div className='mt-[130px] font-Roboto-Condensed p-2 md:p-4 lg:p-8'>
             <div className='flex justify-center items-center flex-col'>
                 <h1 className="uppercase !text-xl md:!text-2xl p-4 text-center !font-bold">book now / contact us</h1>
-                <img src="../../../public/images/line.jpg" className='w-1/6 md:w-1/9 !h-0.5 md:!h-1 mb-2 lg:mb-4' alt="" />
+                <img src="/images/line.jpg" className='w-1/6 md:w-1/9 !h-0.5 md:!h-1 mb-2 lg:mb-4' alt="" />
             </div>
 
             <div className='md:grid md:grid-cols-2 grid-flow-dense md:p-4 lg:px-8'>

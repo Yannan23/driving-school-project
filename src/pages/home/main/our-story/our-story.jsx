@@ -1,6 +1,6 @@
 import React from 'react';
 import './our-story.css';
-import OurStoryImg from '../../../../../public/images/nsw-safe-1.jpg';
+import OurStoryImg from '/images/nsw-safe-1.jpg';
 
 const OurStory = () => {
     return (
