@@ -18,8 +18,9 @@ const ContactUs = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
+        // formData.append("access_key", "5e50c550-f99a-40b3-b1f9-79ffd6febe33");//Rashed
+        formData.append("access_key", "780268db-f29d-48e5-bffb-1a37f51e60b4");
 
-        formData.append("access_key", "5e50c550-f99a-40b3-b1f9-79ffd6febe33");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
