@@ -1,23 +1,42 @@
 import React, { useState, useRef } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+// import ReCAPTCHA from 'react-google-recaptcha';
+import { NavLink } from 'react-router-dom';
 import DropdownInput from '../../components/dropdown-input'
+import CallButton from '../../components/buttons/call-button';
 
 const ContactUs = () => {
     const [capVal, setcapVal] = useState(null);
-    const recaptchaRef = useRef(null);
+    // const recaptchaRef = useRef(null);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [textArea, setTextArea] = useState('');
 
+    // const [result, setResult] = React.useState("");
 
-    const handleSubmit = async (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault();
-        // const token = await recaptchaRef.current.executeAsync();
+        const formData = new FormData(event.target);
 
-    }
+        formData.append("access_key", "5e50c550-f99a-40b3-b1f9-79ffd6febe33");
 
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            console.log("Success", res);
+        }
+    };
 
     return (
         <div className='mt-[130px] font-Roboto-Condensed p-2 md:p-4 lg:p-8'>
@@ -30,26 +49,27 @@ const ContactUs = () => {
                 {/** form */}
                 <div className='md:col-start-2 flex flex-col p-4 lg:p-8 gap-2'>
                     <h2 className='uppercase text-yellow !font-bold py-4'>book now</h2>
-                    <form onSubmit={handleSubmit} className='w-full flex flex-col gap-2 lg:gap-3'>
-                        <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4' placeholder='Name' />
-                        <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize' placeholder='email' />
-                        <input type="text" value={number} onChange={(e) => {
+                    <form onSubmit={onSubmit} className='w-full flex flex-col gap-2 lg:gap-3'>
+                        <input name='name' type="text" value={name} onChange={(e) => { setName(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4' placeholder='Name' />
+                        <input name='email' type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize' placeholder='email' />
+                        <input name='phone number' type="text" value={number} onChange={(e) => {
                             const value = e.target.value;
                             if (/^\d*$/.test(value)) { // Allow only digits (no letters, no special characters)
                                 setNumber(value);
                             }
                         }} className='bg-yellow-400 h-10 lg:h-11 w-full px-4' placeholder='phone' />
                         <DropdownInput />
-                        <textarea value={textArea} onChange={(e) => { setTextArea(e.target.value) }} className='bg-yellow-400 h-40 w-full px-4 !py-2 capitalize text-start' placeholder='message' />
+                        <textarea name='message' value={textArea} onChange={(e) => { setTextArea(e.target.value) }} className='bg-yellow-400 h-40 w-full px-4 !py-2 capitalize text-start' placeholder='message' />
 
                         {/**recaptcha */}
-                        < ReCAPTCHA
+                        {/* < ReCAPTCHA
                             ref={recaptchaRef}
                             sitekey="6Lc9itEqAAAAAED4du2DdXh6NKf_fQn-pMvZ5nr3"
                             onChange={(val) => setcapVal(val)}
-                        />
+                        /> */}
 
-                        <button disabled={!capVal} className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl ${capVal ? "hover:!text-white hover:!bg-yellow-400 cursor-pointer" : "cursor-not-allowed opacity-50"}`}>submit</button>
+                        {/* <button disabled={!capVal} className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl ${capVal ? "hover:!text-white hover:!bg-yellow-400 cursor-pointer" : "cursor-not-allowed opacity-50"}`}>submit</button> */}
+                        <button className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl`}>submit</button>
                     </form>
                 </div>
 
@@ -64,7 +84,7 @@ const ContactUs = () => {
                                 </div>
                                 <div className='text-gray-500 text-lg'>
                                     <p className='capitalize'>phone</p>
-                                    <p>0470272595</p>
+                                    <CallButton />
                                 </div>
                             </div>
                         </div>
@@ -75,7 +95,7 @@ const ContactUs = () => {
                                 </div>
                                 <div className='text-gray-500 text-lg'>
                                     <p className='capitalize'>email</p>
-                                    <p>khanrashed2411@gmail.com</p>
+                                    <p className='hover:text-amber-400 cursor-pointer'><NavLink to="/contact-us">khanrashed2411@gmail.com</NavLink></p>
                                 </div>
                             </div>
                         </div>
