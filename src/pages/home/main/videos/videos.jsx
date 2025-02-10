@@ -5,7 +5,7 @@ const VideoPlayer = () => {
         <div
             className="w-full h-full p-4 pb-8 md:pb-16 md:p-8"
         >
-            <h2 className=' font-semibold py-4 md:py-8'><span className='text-2xl md:text-3xl'>YOU NEED TO KNOW</span></h2>
+            <h2 className='!font-semibold py-4 md:py-8'><span className='text-2xl md:text-3xl'>YOU NEED TO KNOW</span></h2>
             <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
                 <iframe
                     className="w-full h-76"
