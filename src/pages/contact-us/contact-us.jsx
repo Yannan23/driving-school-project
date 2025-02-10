@@ -124,7 +124,10 @@ const ContactUs = () => {
                             <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
                                 <i className="fa-solid fa-mobile-screen-button text-3xl"></i>
                             </div>
-                            <CallButton />
+                            <div className='text-gray-500 text-lg'>
+                                <p className='capitalize'>phone</p>
+                                <CallButton />
+                            </div>
                         </div>
                     </div>
                     <div className='py-2 px-4'>
@@ -132,10 +135,34 @@ const ContactUs = () => {
                             <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
                                 <i className="fa-solid fa-envelope text-3xl"></i>
                             </div>
-                            <NavLink to="/contact-us" className='hover:text-amber-400 cursor-pointer'>khanrashed2411@gmail.com</NavLink>
+                            <div className='text-gray-500 text-lg capitalize'>
+                                <p className='capitalize'>email</p>
+                                <NavLink to="/contact-us" className='hover:text-amber-400 cursor-pointer'>khanrashed2411@gmail.com</NavLink>
+                            </div>
+
                         </div>
                     </div>
+                    <div className='py-2 px-4'>
+                        <div className='flex bg-gray-100 w-full md:w-[80%] p-4 gap-4 items-center'>
+                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                                <i className="fa-solid fa-location-dot text-3xl"></i>
+                            </div>
+                            <div className='text-gray-500 text-lg capitalize'>
+                                <p>address</p>
+                                <p>bankstown NSW</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='mb-4 sm:px-4 sm:py-2 sm:mb-4 lg:px-8 lg:pb-8'>
+                        <h2 className='uppercase text-yellow !font-bold p-4'>areas we cover</h2>
+                        <p className='px-4 text-justify'>Bankstown | Canterbury | Georges Hall | Hurtsville | Liverpool | Rhodes  Campsie |Lakembha | Wiley Park | Lidcomb | Condell Park | Roseland | Burwood| Yagoona | Cabramatta
+                        </p>
+                        <p className='text-xs text-gray-400 p-4 text-justify'>* Please note Pick and Drop off might occour in long distance ONLY .
+                            If Your Suburb not shows in the list please call us for check your suburb if its avaialble or not. We provide mostly greater park of sydney and will assist you as fast as possible.
+                        </p>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
