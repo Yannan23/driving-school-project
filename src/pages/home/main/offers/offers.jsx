@@ -66,7 +66,7 @@ const Offers = () => {
     ];
 
     return (
-        <div className="w-full text-dark-color px-8 bg-cover bg-fixed bg-right bg-repeat" >
+        <div className="w-full text-dark-color px-4">
             {/* Offers */}
             <section className="my-8 flex flex-col gap-4 md:my-12">
                 <h2
