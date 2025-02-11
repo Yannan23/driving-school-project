@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
-import logo from '../../../public/images/logo.svg'
+import logo from '/images/logo.svg'
 import CallButton from '../buttons/call-button';
 
 const Header = () => {

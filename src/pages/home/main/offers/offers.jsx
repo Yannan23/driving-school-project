@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import Hot from '../../../../../public/images/hot.png'
-import Road from '../../../../../public/images/road.png';
+import Hot from '/images/hot.png'
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>
@@ -72,9 +71,6 @@ const Offers = () => {
             <section className="my-8 flex flex-col gap-4 md:my-12">
                 <h2
                     className='!font-bold p-4 !text-2xl md:p-8 md:!text-3xl lg:!text-4xl text-center mb-6 md:mb-8'
-                    style={{
-                        textShadow: '2px 2px 4px rgba(255,255,255,1)'
-                    }}
                 >
                     CURRENT OFFERS
                 </h2>
@@ -92,7 +88,6 @@ const Offers = () => {
                     className='!drop-shadow-md !font-bold !text-2xl pt-2 md:p-8 md:!text-3xl lg:!text-4xl text-center mb-6 md:mb-8'
                     style={{
                         fontSize: '2rem',
-                        textShadow: '2px 2px 4px rgba(255,255,255,1)'
                     }}
                 >
                     PACKAGES

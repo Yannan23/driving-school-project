@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className="bg-[url('/public/images/banner-image.jpg')] mt-[110px] bg-cover bg-center bg-no-repeat max-h-screen w-full md:h-[1000px] lg:bg-top">
+        <div className="bg-[url('/images/banner-image.jpg')] mt-[110px] bg-cover bg-center bg-no-repeat max-h-screen w-full md:h-[1000px] lg:bg-top">
             {/** banner content */}
             <div className="flex flex-col justify-start items-start h-full w-[90%] gap-4 text-white px-8 py-10 sm:px-12 sm:py-20 sm:gap-8 md:px-12 md:py-24 md:w-[50%]">
                 <h1 className='font-Roboto-Condensed !text-2xl w-[70%] sm:!text-5xl sm:w-full sm:leading-snug'>Your Journey to <span className='text-amber-400 text-2xl sm:!text-6xl md:!text-7xl md:!w-[60%]'>Safe</span>  Driving Starts Here.</h1>

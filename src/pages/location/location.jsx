@@ -1,11 +1,13 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import LocationBanner from './location-components/location-banner/location-banner';
+import LocationServiceArea from './location-components/location-service-area/location-service-area';
+import LocationFooter from './location-components/location-footer/location-footer';
 
 const Location = () => {
     return (
         <div>
-            <h1>My Location</h1>
-            <p><NavLink to="/">home</NavLink></p>
+            <LocationBanner/>
+            <LocationServiceArea/>
+            <LocationFooter/>
         </div>
     )
 }

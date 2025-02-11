@@ -36,7 +36,7 @@
     margin-bottom: .8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .wcu-label-box {
         width: 80vw;
     }
@@ -59,7 +59,7 @@
     }
 
     .wcu-content-box ul {
-        padding-left: 0;
+        padding-left: 1rem;
     }
 }
 
