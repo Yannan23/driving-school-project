@@ -9,7 +9,7 @@ function LocationMap() {
     const markerRef = useRef(null);
 
     useEffect(() => {
-        mapboxgl.accessToken = 'pk.eyJ1IjoieWFubmFuMTEyMiIsImEiOiJjbHpnMG04YmEwcmNlMmxxMTY0dmVjOXo2In0.ohiqPHaTXPRnyoPnk3HBTg';
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZHl4OTUyMjczMTExIiwiYSI6ImNtNnlrN2w4bDA3NWsya29iMXV4OXB4NjIifQ.dKXAXIkR-Beo9upl5D227Q';
 
         if (!mapContainerRef.current) return;
 
