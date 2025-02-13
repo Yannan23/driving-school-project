@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import DropdownInput from '../../components/dropdown-input';
 import CallButton from '../../components/buttons/call-button';
@@ -12,7 +12,7 @@ const schema = {
     properties: {
         name: { type: "string", minLength: 1, errorMessage: "Name can't be empty" },
         email: { type: "string", format: "email", errorMessage: "Invalid email format" },
-        number: { type: "string", pattern: "^\\d+$", errorMessage: "Number must be a valid number" },
+        number: { type: "string", pattern: "^0[23478][0-9]{8}$", errorMessage: "Number must be a valid number" },
         suburb: { type: "string", minLength: 1, errorMessage: "Suburb cannot be empty" },
         message: { type: "string" }
     },
@@ -69,7 +69,7 @@ const ContactUs = () => {
         }
 
         const formData = new FormData(event.target);
-        formData.append("access_key", "780268db-f29d-48e5-bffb-1a37f51e60b4");
+        formData.append("access_key", "5e50c550-f99a-40b3-b1f9-79ffd6febe33");
         const json = JSON.stringify(Object.fromEntries(formData));
 
         const res = await fetch("https://api.web3forms.com/submit", {
@@ -79,7 +79,7 @@ const ContactUs = () => {
         }).then(res => res.json());
 
         if (res.success) {
-            console.log("Success", res);
+            alert("Form submitted successfully");
         }
     };
 
@@ -98,9 +98,12 @@ const ContactUs = () => {
                                 <div key={field}>
                                     <input
                                         name={field}
-                                        type={field === 'email' ? 'email' : field === 'number' ? 'number' : 'text'}
+                                        type={field === 'email' ? 'email' : 'text'}
                                         value={userInfo[field]}
-                                        onChange={handleChange}
+                                        onChange={field === 'number' ? (e) => {
+                                            const value = e.target.value.replace(/[^0-9]/g, '');
+                                            setUserInfo({ ...userInfo, [e.target.name]: value });
+                                        } : handleChange}
                                         className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize'
                                         placeholder={field}
                                     />
