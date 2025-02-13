@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 import logo from '/images/logo.svg'
@@ -69,9 +69,16 @@ const Header = () => {
                         </ul>
                     </div>
                 </nav >
-                <div className={`${isVisible ? 'visible' : 'hidden'} flex items-end justify-end w-full bg-white text-gray-600 py-2 px-4 md:px-8 lg:px-16`}>
-                    <div className='font-font-Roboto-Condensed flex justify-start items-center gap-2 md:gap-4'>
-                        <i className="fa-solid fa-phone"></i>
+                <div className={`${isVisible ? 'visible' : 'hidden'} flex justify-center w-full bg-white text-gray-600 py-2 px-4 md:!px-8 lg:!px-16 font-font-Roboto-Condensed flex-col md:!flex-row md:!justify-between items-center gap-2 md:gap-4`}>
+                    <div className='justify-start items-center gap-2 hidden md:!flex'>
+                        <i className="fa-solid fa-envelope text-yellow"></i>
+                        <p className='hover:text-yellow hover:underline cursor-pointer'>
+                            <NavLink to="contact-us">khanrashed2411@gmail.com</NavLink>
+                        </p>
+                    </div>
+                    <div className='flex justify-start items-center gap-2'>
+                        <i className="fa-solid fa-phone text-yellow"></i>
+                        <p className='font-Roboto-Condensed capitalize'>call us:</p>
                         <CallButton />
                     </div>
                 </div>
