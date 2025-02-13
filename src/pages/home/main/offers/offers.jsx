@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import Hot from '../../../../../public/images/hot.png'
-import Road from '../../../../../public/images/road.png';
+import Hot from '/images/hot.png'
 
 const OfferCard = ({ title, description, price, savings, isHot, limitedTime }) => (
     <>

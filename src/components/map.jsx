@@ -21,7 +21,7 @@ function Map() {
             // Create a custom marker element
             const el = document.createElement('div');
             el.className = 'marker';
-            el.style.backgroundImage = 'url(/public/images/logo.svg)';
+            el.style.backgroundImage = 'url(/images/logo.svg)';
             el.style.width = '32px';
             el.style.height = '32px';
             el.style.backgroundSize = '100%';
