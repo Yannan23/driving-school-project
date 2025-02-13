@@ -10,7 +10,7 @@
 
 .package-cards-card{
     border: 2px solid var(--yellow-color);
-    border-radius: .5rem;
+    border-radius: .2rem;
     height: 15rem;
     margin-bottom: 4rem;
     overflow: hidden;
@@ -70,7 +70,6 @@
     bottom: 1rem;
     padding: .5rem 1rem;
     background-color: var(--yellow-color);
-    border-radius: .5rem;
     color: var(--font-light-color);
     cursor: pointer;
     transition: ease .2s;
