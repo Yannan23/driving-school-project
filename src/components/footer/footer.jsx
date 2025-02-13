@@ -48,12 +48,12 @@ const Footer = () => {
                     {/* location */}
                     <div className='flex flex-col items-start gap-2 w-full min-w-40 lg:!w-[40%]'>
                         <h2 className='font-Fell text-light !text-2xl md:!text-4xl'>location</h2>
-                        <div className='flex flex-col gap-2 md:w-full'>
+                        <div className='flex flex-col gap-2 w-full'>
                             <div className='flex justify-start items-center gap-2'>
                                 <i className="fa-solid fa-envelope"></i>
                                 <p className='hover:text-yellow cursor-pointer'>25-29 French Avenue Bankstown</p>
                             </div>
-                            <div className='flex justify-start items-center gap-2'>
+                            <div className='flex justify-start items-center w-full gap-2'>
                                 <Map />
                             </div>
                         </div>
