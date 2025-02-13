@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import DropdownInput from '../../components/dropdown-input';
 import CallButton from '../../components/buttons/call-button';
@@ -28,6 +28,9 @@ const schema = {
 };
 
 const ContactUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
     const [userInfo, setUserInfo] = useState({ name: "", email: "", number: "", message: "", suburb: "" });
     const [errors, setErrors] = useState({});
 
