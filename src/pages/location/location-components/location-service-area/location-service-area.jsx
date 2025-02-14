@@ -5,7 +5,7 @@ export default function LocationServiceArea() {
         <>
             <div className="location-service-area-box">
                 <h1 className="location-service-area-title">
-                    Service Area
+                    SERVICE AREA
                 </h1>
 
                 <div className="location-service-area-content">

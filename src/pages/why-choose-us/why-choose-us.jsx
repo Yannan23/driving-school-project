@@ -7,13 +7,13 @@ import './why-choose-us.css'
 
 const WhyChooseUs = () => {
     return (
-        <body className="wcu-page-body">
+        <div className="wcu-page-body">
             <WhyChooseUsHeader/>
             <WhyChooseUsBanner/>
             <WhyChooseUsLabels/>
             <WhyChooseUsComment/>
             <WhyChooseUsFooter/>
-        </body>
+        </div>
     )
 }
 

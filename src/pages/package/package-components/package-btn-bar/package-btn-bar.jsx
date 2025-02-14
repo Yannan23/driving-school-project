@@ -14,21 +14,21 @@ const PackageBtnBar = () => {
                     className={`package-btn-bar-btn ${activeTab === "lessons" ? "package-btn-bar-btn-selected" : ""}`} 
                     onClick={() => setActiveTab("lessons")}
                 >
-                    Lessons
+                    LESSON
                 </button>
 
                 <button 
                     className={`package-btn-bar-btn ${activeTab === "package" ? "package-btn-bar-btn-selected" : ""}`} 
                     onClick={() => setActiveTab("package")}
                 >
-                    Package
+                    PACKAGE
                 </button>
 
                 <button 
                     className={`package-btn-bar-btn ${activeTab === "drive-test" ? "package-btn-bar-btn-selected" : ""}`} 
                     onClick={() => setActiveTab("drive-test")}
                 >
-                    Drive Test
+                    DRIVE TEST
                 </button>
             </div>
 
