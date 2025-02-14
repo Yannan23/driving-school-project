@@ -21,15 +21,20 @@ function LocationMap() {
         });
 
         mapRef.current.on('load', () => {
-            const el = document.createElement('div');
+            const el = document.createElement('a');
             el.className = 'marker';
+            el.href = 'https://www.google.com/maps/search/?api=1&query=25-29+French+Avenue+Bankstown';
+            el.target = '_blank'; 
+            el.rel = 'noopener noreferrer';
             el.style.backgroundImage = 'url(/images/logo.svg)';
             el.style.width = '32px';
             el.style.height = '32px';
             el.style.backgroundSize = '100%';
+            el.style.display = 'block'; 
+            el.style.cursor = 'pointer'; 
 
-            markerRef.current = new mapboxgl.Marker(el)
-                .setLngLat([151.0335, -33.9124])
+            markerRef.current = new mapboxgl.Marker({ element: el })
+                .setLngLat([151.0335, -33.9124]) 
                 .addTo(mapRef.current);
         });
 
