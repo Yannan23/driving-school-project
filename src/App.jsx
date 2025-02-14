@@ -2,6 +2,7 @@ import './App.css'
 
 import Home from './pages/home/home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/scroll-to-top/scroll-to-top'
 import Layout from './components/layout/layout';
 import WhyChooseUs from './pages/why-choose-us/why-choose-us'
 import Package from './pages/package/package'
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
