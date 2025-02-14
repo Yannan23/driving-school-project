@@ -44,9 +44,11 @@
 
     .wcu-header-title {
         font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 
     .wcu-header-content {
+        margin-top: 0;
         font-size: 0.9rem;
         max-width: 95%;
     }
