@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import DropdownInput from '../../components/dropdown-input';
+import DropdownInput from '../../components/dropdown-input/dropdown-input';
 import CallButton from '../../components/buttons/call-button';
 import ajvErrors from 'ajv-errors';
 import Ajv from 'ajv';
@@ -28,9 +28,7 @@ const schema = {
 };
 
 const ContactUs = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    })
+
     const [userInfo, setUserInfo] = useState({ name: "", email: "", number: "", message: "", suburb: "" });
     const [errors, setErrors] = useState({});
 

@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import logo from '/images/logo.svg'
 import CallButton from '../buttons/call-button';
-import Map from '../map';
+import Map from '../map/map';
 
 const Footer = () => {
 
