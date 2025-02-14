@@ -2,26 +2,27 @@
     display: flex;
     background-color: var(--yellow-color);
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.3rem 0;
 
 }
 
 .location-footer-content{
-    width: 70%;
-    font-size: 1.2rem;
+    width: 65%;
+    font-size: 1rem;
     margin: 0 2rem;
 }
 
 .location-footer-btn {
+    font-family: var(--font-Fell);
     background-color: var(--background-color);
     color: var(--font-light-color);
     padding: .7rem 2rem;
-    width: 10rem;
-    font-size: 1.2rem;
+    font-size: .9rem;
     transition: 0.1s;
     cursor: pointer;
     margin-left: auto;
     margin-right: 2rem;
+    padding: 0.9rem 2.4rem;
 }
 
 .location-footer-btn:hover{

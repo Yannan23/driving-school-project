@@ -9,7 +9,7 @@ const WhyChooseUsFooter = () => {
             </h3>
 
             <NavLink to="/contact-us" className="wcu-footer-btn">
-                Book Now
+                BOOK NOW
             </NavLink>
         </div>
     );

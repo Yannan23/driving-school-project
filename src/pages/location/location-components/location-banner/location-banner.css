@@ -9,6 +9,7 @@
 }
 
 .location-banner-title{
+    font-family: var(--font-Roboto-Condensed);
     font-size: 3rem;
     color: var(--font-light-color);
     margin: 2rem;

@@ -13,15 +13,16 @@
 }
 
 .wcu-footer-btn {
+    font-family: var(--font-Fell);
     background-color: var(--background-color);
     color: var(--font-light-color);
     padding: .7rem 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: .9rem;
     transition: 0.1s;
     cursor: pointer;
     margin-left: auto;
     margin-right: 2rem;
+    padding: 0.9rem 2.4rem;
 }
 
 .wcu-footer-btn:hover{
@@ -29,7 +30,7 @@
     color: var(--yellow-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .wcu-footer {
         flex-direction: column;
         height: auto;

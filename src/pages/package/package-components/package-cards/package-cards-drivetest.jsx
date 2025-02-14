@@ -24,7 +24,7 @@ const PackageCards = () => {
                     </span>
 
                     <NavLink to="/contact-us" className="package-cards-card-btn">
-                        Book Now
+                        BOOK NOW
                     </NavLink>
 
                 </div>
