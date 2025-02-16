@@ -41,7 +41,7 @@ const Header = () => {
         <header ref={navRef} className={`flex flex-col justify-center items-center w-full bg-dark-color text-white-color your-nav-classes ${isScrolled ? 'scrolled' : ''}`} >
             <div className='relative w-full'>
                 <nav className='navbar flex justify-between items-center w-full relative'>
-                    <div className="">
+                    <div className="ml-4 md:ml-8 lg:ml-16">
                         <NavLink to="/"><img src={logo} className='nav-logo' alt="" /></NavLink>
                     </div>
                     <div
