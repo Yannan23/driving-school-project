@@ -64,7 +64,7 @@ const Footer = () => {
 
             {/*footer terms info */}
             <div className="w-full border-0 mt-4 !border-t-2 !border-solid !border-gray-500 p-4 text-xs" >
-                <div className='flex flex-col justify-between items-center  text-gray-500 md:!flex-row md:!justify-between md:px-8'>
+                <div className='flex flex-col justify-between items-center  text-gray-500 md:!flex-row md:!justify-between md:px-8 lg:px-16'>
                     <div className='flex flex-col items-center justify-center sm:!flex-row sm:gap-2'>
                         <p>© 2025 NSW Safe Driving School</p>
                         <p className='sm:!border-l-1 !border-solid !border-gray-500 pl-2'>ABN - 12883995421</p>

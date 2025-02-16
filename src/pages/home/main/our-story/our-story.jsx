@@ -4,7 +4,7 @@ import OurStoryImg from '/images/nsw-safe-1.jpg';
 
 const OurStory = () => {
     return (
-        <section className="flex flex-col items-start justify-start p-8 bg-gray-100 m-4 shadow-lg gap-4 md:relative md:bg-white md:shadow-none">
+        <section className="flex flex-col items-start justify-start p-8 bg-gray-100 m-4 shadow-lg gap-4 md:relative md:bg-white md:shadow-none lg:px-16">
             <img src={OurStoryImg} alt="" className="md:w-3/5" />
             <div className='our-story-content flex flex-col gap-2 p-4 md:border-2 md:absolute md:top-1/4 md:left-2/5 md:w-[55%]  md:bg-white md:z-10 md:p-4 lg:p-8' >
                 <h2 className='!font-bold text-gray-800 my-4 '><span className='text-xl lg:text-3xl'>OUR STORY</span></h2>

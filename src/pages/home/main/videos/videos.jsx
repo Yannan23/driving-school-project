@@ -3,10 +3,10 @@ import React from 'react';
 const VideoPlayer = () => {
     return (
         <div
-            className="w-full h-full p-4 pb-8 md:pb-16 md:p-8"
+            className="w-full h-full p-6 pb-8 md:pb-16 md:px-16"
         >
             <h2 className='!font-semibold py-4 md:py-8'><span className='text-2xl md:text-3xl'>YOU NEED TO KNOW</span></h2>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
+            <div className='grid grid-cols-1 gap-4 md:gap-8 lg:gap-16 md:grid-cols-2'>
                 <iframe
                     className="w-full h-76"
                     src="https://www.youtube.com/embed/sCXtcXD17qU"
