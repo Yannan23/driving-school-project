@@ -79,7 +79,7 @@ const Header = () => {
                     </div>
                     <div className='flex justify-start items-center gap-2'>
                         {/* <i className="fa-solid fa-phone text-yellow"></i> */}
-                        <img src={CallGifImg} alt="Call animation" className='w-10 h-10' />
+                        <img src={CallGifImg} alt="Call animation" className='w-6 h-6 lg:w-8 lg:h-8' />
                         <p className='font-Roboto-Condensed capitalize'>call us:</p>
                         <CallButton />
                     </div>
