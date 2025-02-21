@@ -54,11 +54,11 @@ const Offers = () => {
     const offers = [
         { title: "observation test", description: ["1 - hour lesson"], price: "$60" },
         { title: "Beginner 1 Hour Lesson", description: ["1 - hour lesson", "3 Hours Log Book = 1 Hour"], price: "$70" },
-        { title: "Beginner 2 Hour Lesson", description: ["2 - hour lesson", "6 Hours Logbook = 2 Hours"], price: "$120", savings: "(save $20)", isHot: true },
+        { title: "Beginner 2 Hour Lesson", description: ["2 - hour lesson", "6 Hours Logbook = 2 Hours"], price: "$120", savings: "(save $20)", isHot: false },
     ];
 
     const packages = [
-        { title: "6 Hour Lesson Package", description: ["6 - Hour Lesson", "6 Hours Logbook = 18 Hours"], price: "$360", savings: "(save $60)", isHot: true, limitedTime: "limited time only!" },
+        { title: "6 Hour Lesson Package", description: ["6 - Hour Lesson", "6 Hours Logbook = 18 Hours"], price: "$360", savings: "(save $60)", isHot: false, limitedTime: false },
         { title: "10 Hour Lesson Package", description: ["10 - hour lesson", "30 Hours Logbook = 10 Hours"], price: "$600", savings: "(save $100)", isHot: true, limitedTime: "limited time only!" },
         { title: "20 Hour Lesson Package", description: ["20 - hour lesson", "60 Hours Logbook = 20 Hours"], price: "$1200", savings: "(save $200)", isHot: true, limitedTime: "won't last long!!" },
         { title: "RMS DRIVING TEST", description: ["* Pick up & Drop Off Include", "*30 Mins Skim Through  Pre Road Test Before Exam", "*Use Instructor RMS Approved Vehicle"], isHot: false, price: "$200", limitedTime: false },
