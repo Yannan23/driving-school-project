@@ -74,7 +74,6 @@ header {
 .nav-logo {
     width: 4.5rem;
     height: 4.5rem;
-    margin-left: 2rem;
 }
 
 nav li:hover {
@@ -106,6 +105,11 @@ button:hover {
 
     .toggle-button {
         display: none;
+    }
+
+    .nav-logo {
+        width: 6rem;
+        height: 6rem;
     }
 
     .navbar-links-container {
@@ -165,11 +169,6 @@ button:hover {
 }
 
 @media screen and (min-width: 1024px) {
-    .nav-logo {
-        margin-left: 6rem;
-        width: 6rem;
-        height: 6rem;
-    }
 
     .navbar-links {
         padding: 0;

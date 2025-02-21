@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './header.css';
 import logo from '/images/logo.svg'
 import CallButton from '../buttons/call-button';
+import CallGifImg from '../../../public/images/call.gif'
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -77,7 +78,8 @@ const Header = () => {
                         </p>
                     </div>
                     <div className='flex justify-start items-center gap-2'>
-                        <i className="fa-solid fa-phone text-yellow"></i>
+                        {/* <i className="fa-solid fa-phone text-yellow"></i> */}
+                        <img src={CallGifImg} alt="Call animation" className='w-10 h-10' />
                         <p className='font-Roboto-Condensed capitalize'>call us:</p>
                         <CallButton />
                     </div>
