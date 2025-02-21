@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import DropdownInput from '../../components/dropdown-input/dropdown-input';
 import CallButton from '../../components/buttons/call-button';
 import ajvErrors from 'ajv-errors';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';  // <-- Import ajv-formats
+import ReCAPTCHA from 'react-google-recaptcha';
 
 
 const schema = {
@@ -28,8 +29,10 @@ const schema = {
 };
 
 const ContactUs = () => {
+    const [capVal, setcapVal] = useState(null);
+    const recaptchaRef = useRef(null);
 
-    const [userInfo, setUserInfo] = useState({ name: "", email: "", number: "", message: "", suburb: "" });
+    const [userInfo, setUserInfo] = useState({ Name: "", Email: "", Number: "", message: "", suburb: "" });
     const [errors, setErrors] = useState({});
 
     const handleChange = (e) => {
@@ -81,6 +84,8 @@ const ContactUs = () => {
 
         if (res.success) {
             alert("Form submitted successfully");
+            console.log("success");
+
         }
     };
 
@@ -94,8 +99,8 @@ const ContactUs = () => {
                 <div className='md:col-start-2 flex flex-col !p-4 lg:!p-8 gap-2'>
                     <div className='py-2 px-4'>
                         <h2 className='uppercase text-yellow !font-bold py-4'>book now</h2>
-                        <form onSubmit={onSubmit} className='w-full flex flex-col gap-2 lg:gap-3'>
-                            {['name', 'email', 'number'].map((field) => (
+                        <form onSubmit={onSubmit} action="/submit" className='w-full flex flex-col gap-2 lg:gap-3' method="POST">
+                            {['Name', 'Email', 'Number'].map((field) => (
                                 <div key={field}>
                                     <input
                                         name={field}
@@ -105,7 +110,7 @@ const ContactUs = () => {
                                             const value = e.target.value.replace(/[^0-9]/g, '');
                                             setUserInfo({ ...userInfo, [e.target.name]: value });
                                         } : handleChange}
-                                        className='bg-yellow-400 h-10 lg:h-11 w-full px-4 capitalize'
+                                        className='bg-yellow-400 h-10 lg:h-11 w-full px-4'
                                         placeholder={field}
                                     />
                                     {errors[field] && <p className="text-red-500 text-xs">{errors[field]}</p>}
@@ -119,8 +124,16 @@ const ContactUs = () => {
                                 <textarea name='message' value={userInfo.message} onChange={handleChange} className='bg-yellow-400 h-40 w-full px-4 py-2 capitalize text-start' placeholder='message' />
                                 {errors.message && <p className="text-red-500 text-xs">{errors.message}</p>}
                             </div>
-                            <button className='!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl'>submit</button>
+
+                            {/**recaptcha */}
+                            < ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey="6Lc9itEqAAAAAED4du2DdXh6NKf_fQn-pMvZ5nr3"
+                                onChange={(val) => setcapVal(val)}
+                            />
+                            <button disabled={!capVal} className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl ${capVal ? "hover:!text-white hover:!bg-yellow-400 cursor-pointer" : "cursor-not-allowed opacity-50"}`}>submit</button>
                         </form>
+
                     </div>
                 </div>
                 <div className='md:col-start-1 flex flex-col p-4 lg:p-8 gap-2'>
