@@ -22,7 +22,7 @@ header {
 }
 
 .toggle-button {
-    right: 1.5rem;
+    right: 2rem;
     font-size: 2rem;
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 .navbar-links-container {
-    /* padding: 2px 5px; */
+    padding: 2px 5px;
     font-size: 1rem;
 }
 
@@ -41,7 +41,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+    position: absolute;
     top: 100%;
     right: 0;
     color: white;
@@ -107,6 +107,11 @@ button:hover {
         display: none;
     }
 
+    .nav-logo {
+        width: 6rem;
+        height: 6rem;
+    }
+
     .navbar-links-container {
         padding: 0;
         margin: 0;
@@ -164,11 +169,6 @@ button:hover {
 }
 
 @media screen and (min-width: 1024px) {
-    .nav-logo {
-        width: 6rem;
-        height: 6rem;
-
-    }
 
     .navbar-links {
         padding: 0;
