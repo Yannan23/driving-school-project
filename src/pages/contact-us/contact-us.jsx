@@ -173,8 +173,9 @@ const ContactUs = () => {
                     </div>
                     <div className='mb-4 sm:py-2 sm:mb-4 lg:pb-8'>
                         <h2 className='uppercase text-yellow !font-bold p-4'>areas we cover</h2>
-                        <p className='px-4 text-justify capitalize'>Bankstown | Canterbury | Georges Hall | Hurtsville | Liverpool | Rhodes  Campsie | Lakembha | Wiley Park | Lidcomb | Condell Park | Roseland | Burwood | Yagoona | Cabramatta | Revesby | condell park | padstow | Riverwood | Narwee | Bevery Hills | Mount Lewis | Greenacre | Chullora | Strathfield | Burwood ⁠</p>
-                        <p className='text-xs text-gray-400 p-4 text-justify'>* Please note Pick and Drop off might occour in long distance ONLY. If Your Suburb not shows in the list please call us for check your suburb if its avaialble or not. We provide mostly greater park of sydney and will assist you as fast as possible.
+                        <p className='px-4 text-justify capitalize'>Bankstown | Canterbury | Georges Hall | Hurtsville | Liverpool | Rhodes  Campsie | Lakembha | Wiley Park | Lidcomb | Condell Park | Roseland | Burwood | Yagoona | Cabramatta | Revesby | condell park | padstow | Riverwood | Narwee | Bevery Hills | Mount Lewis | Greenacre | Chullora | Strathfield | Burwood | Rosemeadow | St Helens Park |Ambervale | Campbelltown | Bradbury | Glen alpine | Airds | Ruse | Lumeah | Blair Athol | Minto | Claymore | Eschol Park | Eagle Vale | Ingleburn | Glenfield
+                        </p>
+                        <p className='text-xs p-4 text-justify text-amber-400'>* Please note Pick and Drop off might occour in long distance ONLY. If Your Suburb not shows in the list please call us for check your suburb if its avaialble or not. We provide mostly greater park of sydney and will assist you as fast as possible.
                         </p>
                     </div>
                 </div>
