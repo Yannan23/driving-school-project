@@ -1,8 +1,8 @@
-# Diving School Website
+# Driving School Website
 
 ## Overview
 
-The Diving School Website is a responsive web application designed to showcase a diving school, provide information about courses, and allow users to send booking requests. The website ensures a smooth and engaging user experience with a modern and intuitive interface.
+The Driving School Website is a responsive web application designed to showcase a driving school, provide information about courses, and allow users to send booking requests. The website ensures a smooth and engaging user experience with a modern and intuitive interface.
 
 ## Features
 
