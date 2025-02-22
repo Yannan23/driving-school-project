@@ -18,10 +18,10 @@ const PackageCards = () => {
                 <div className="package-cards-card-content-box">
                     <span className="package-cards-card-content">
                         <ul>
-                            <li className='package-cards-card-content-save'><strong>Save $60</strong></li>
+                            <li className='package-cards-card-content-save'><strong>Save $60 great discount for student</strong></li>
                             <li>6 Hours Lesson</li>
                             <li>6 Hours = 18 Hours Log Book</li>
-                            <li>$200 deposit on first lesson</li>
+                            <li>Opportunity to pay by installment</li>
                         </ul>
                     </span>
 
@@ -42,10 +42,10 @@ const PackageCards = () => {
                 <div className="package-cards-card-content-box">
                     <span className="package-cards-card-content">
                         <ul>
-                            <li className='package-cards-card-content-save'><strong>Save $100</strong></li>
+                            <li className='package-cards-card-content-save'><strong>Save $100 awesome discount for student</strong></li>
                             <li>10 Hours Lesson</li>
                             <li>10 Hours = 30 Hours Log Book</li>
-                            <li>$300 deposit on first lesson with 2 installment</li>
+                            <li>Opportunity to pay by installment</li>
                         </ul>
                     </span>
 
@@ -66,10 +66,10 @@ const PackageCards = () => {
                 <div className="package-cards-card-content-box">
                     <span className="package-cards-card-content">
                         <ul>
-                            <li className='package-cards-card-content-save'><strong>Save $200</strong></li>
+                            <li className='package-cards-card-content-save'><strong>$200 Big savings discount for student</strong></li>
                             <li>20 Hours Lesson</li>
                             <li>20 Hours = 60 Hours Log Book</li>
-                            <li>$500 deposit on first lesson with 2 installment</li>
+                            <li>Opportunity to pay by installment</li>
                         </ul>
                     </span>
 
