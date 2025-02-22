@@ -31,7 +31,7 @@ Ensure you have **VSCode** and the **Live Server extension** installed.
 1. Clone the repository:
    ```sh
    git clone https://github.com/Yannan23/driving-school-project
-   cd diving-school
+   cd driving-school-project
    ```
 2. Open the project in **VSCode**.
 3. Right-click the `index.html` file and choose **Open With Live Server**.
