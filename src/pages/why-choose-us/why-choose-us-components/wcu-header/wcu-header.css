@@ -6,6 +6,7 @@
     background-color: var(--yellow-color);
     margin-top: 8rem;
     height: 14rem;
+    padding-left: 5rem;
 }
 
 .wcu-header-title{
@@ -21,7 +22,7 @@
     margin: 1rem 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     .wcu-header-box {
         padding: 1.5rem 1rem;
     }

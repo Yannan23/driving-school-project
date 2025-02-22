@@ -2,7 +2,7 @@
     display: flex;
     background-color: var(--yellow-color);
     align-items: center;
-    padding: 1.3rem 0;
+    padding: 1.3rem 5rem;
 
 }
 
@@ -16,7 +16,6 @@
     font-family: var(--font-Fell);
     background-color: var(--background-color);
     color: var(--font-light-color);
-    padding: .7rem 2rem;
     font-size: .9rem;
     transition: 0.1s;
     cursor: pointer;
