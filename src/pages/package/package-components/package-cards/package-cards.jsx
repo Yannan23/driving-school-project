@@ -11,7 +11,7 @@ const PackageCards = () => {
             <div className="package-cards-card">
                 <div className="package-cards-card-header">
                     <span className="package-cards-card-name">Observation Test</span> 
-                    <span className="package-cards-card-price">$50</span>
+                    <span className="package-cards-card-price">$60</span>
                 </div>
 
                 <div className="package-cards-card-content-box">
