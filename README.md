@@ -1,8 +1,8 @@
-# Driving School Website
+# NSW Safe Driving School Website
 
 ## Overview
 
-The Driving School Website is a responsive web application designed to showcase a driving school, provide information about courses, and allow users to send booking requests. The website ensures a smooth and engaging user experience with a modern and intuitive interface.
+This Website is a responsive web application designed to showcase NSW Safe Driving School, provide information about courses, and allow users to send booking requests. The website ensures a smooth and engaging user experience with a modern and intuitive interface.
 
 ## Features
 
