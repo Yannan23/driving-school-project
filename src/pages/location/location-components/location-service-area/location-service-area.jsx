@@ -19,7 +19,14 @@ export default function LocationServiceArea() {
                         <li>Revesby</li>
                         <li>Condell Park</li>
                         <li>Padstow</li>
+                        <li>Rosemeadow</li>
+                        <li>St' Helens Park</li>
+                        <li>Ambervale</li>
+                        <li>Campbelltown</li>
+                        <li>Bradbury</li>
+                        <li>Glenfield</li>
                     </div>
+
                     <div className="location-service-area-content-column">
                         <li>Rhodes</li>
                         <li>Campsie</li>
@@ -30,7 +37,14 @@ export default function LocationServiceArea() {
                         <li>Narwee</li>
                         <li>Bevery Hills</li>
                         <li>Mount Lewis</li>
+                        <li>Glen alpine</li>
+                        <li>Airds</li>
+                        <li>Ruse</li>
+                        <li>Lumeah</li>
+                        <li>Blair Athol</li>
+                        <li>Mount Lewis</li>
                     </div>
+
                     <div className="location-service-area-content-column">
                         <li>Burwood</li>
                         <li>Yagoona</li>
@@ -41,24 +55,13 @@ export default function LocationServiceArea() {
                         <li>Greenacre</li>
                         <li>Chullora</li>
                         <li>Strathfield</li>
-                    </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                        <li>Minto</li>
+                        <li>Claymore</li>
+                        <li>Eschol Park</li>
+                        <li>Eagle Vale</li>
+                        <li>Ingleburn</li>
+                        <li>Strathfield</li>
+                    </div>                
                 </div>
 
             </div>
