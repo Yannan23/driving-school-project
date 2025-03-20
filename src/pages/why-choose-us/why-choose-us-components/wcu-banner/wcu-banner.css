@@ -9,7 +9,6 @@
 
 .wcu-banner{
     border: .2rem solid var(--yellow-color);
-    border-radius: 0.2rem;
     padding: 1rem 3.5rem;
     text-align: center;
 }

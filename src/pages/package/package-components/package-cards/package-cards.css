@@ -10,7 +10,6 @@
 
 .package-cards-card{
     border: 2px solid var(--yellow-color);
-    border-radius: .2rem;
     height: 15rem;
     margin-bottom: 4rem;
     overflow: hidden;
