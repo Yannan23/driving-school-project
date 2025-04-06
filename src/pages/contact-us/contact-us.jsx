@@ -1,11 +1,12 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
+import Ajv from 'ajv';
+import ajvErrors from 'ajv-errors';
+import addFormats from 'ajv-formats';  // <-- Import ajv-formats
+
 import DropdownInput from '../../components/dropdown-input/dropdown-input';
 import CallButton from '../../components/buttons/call-button';
-import ajvErrors from 'ajv-errors';
-import Ajv from 'ajv';
-import addFormats from 'ajv-formats';  // <-- Import ajv-formats
-import ReCAPTCHA from 'react-google-recaptcha';
 
 
 const schema = {
@@ -30,7 +31,9 @@ const schema = {
 
 const ContactUs = () => {
     const [capVal, setcapVal] = useState(null);
-    const recaptchaRef = useRef(null);
+    const captchaRef = useRef(null);
+    const [result, setResult] = useState('')
+    const [token, setToken] = useState(null);
 
     const [userInfo, setUserInfo] = useState({ Name: "", Email: "", Number: "", message: "", suburb: "" });
     const [errors, setErrors] = useState({});
@@ -64,30 +67,40 @@ const ContactUs = () => {
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        setErrors({});
-
-        const validationErrors = validateForm(userInfo);
-        if (validationErrors) {
-            setErrors(validationErrors);
-            return;
-        }
 
         const formData = new FormData(event.target);
-        formData.append("access_key", "5e50c550-f99a-40b3-b1f9-79ffd6febe33");
-        const json = JSON.stringify(Object.fromEntries(formData));
 
-        const res = await fetch("https://api.web3forms.com/submit", {
+        formData.append("access_key", "780268db-f29d-48e5-bffb-1a37f51e60b4");
+        formData.append("h-captcha-response", token);
+
+        const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            headers: { "Content-Type": "application/json", Accept: "application/json" },
-            body: json
-        }).then(res => res.json());
+            body: formData
+        });
 
-        if (res.success) {
-            alert("Form submitted successfully");
-            console.log("success");
+        const data = await response.json();
 
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            // event.target.reset();
+        } else {
+            console.log("Error", data);
         }
     };
+    const onLoad = () => {
+        captchaRef.current.execute();
+    }
+
+    useEffect(() => {
+        if (token) {
+            console.log(`hCaptcha Token: ${token}`);
+        }
+    }, [token])
+    // const onHCaptchaChange = (token) => {
+    //     // Verify the token on your server
+    //     console.log('Captcha token:', token);
+    //     // Proceed with form submission
+    // };
 
     return (
         <div className='mt-[130px] font-Roboto-Condensed p-2 md:p-4 lg:p-8'>
@@ -99,7 +112,7 @@ const ContactUs = () => {
                 <div className='md:col-start-2 flex flex-col !p-4 lg:!p-8 gap-2'>
                     <div className='py-2 px-4'>
                         <h2 className='uppercase text-yellow !font-bold py-4'>book now</h2>
-                        <form onSubmit={onSubmit} action="/submit" className='w-full flex flex-col gap-2 lg:gap-3' method="POST">
+                        <form onSubmit={onSubmit} className='w-full flex flex-col gap-2 lg:gap-3'>
                             {['Name', 'Email', 'Number'].map((field) => (
                                 <div key={field}>
                                     <input
@@ -125,16 +138,20 @@ const ContactUs = () => {
                                 {errors.message && <p className="text-red-500 text-xs">{errors.message}</p>}
                             </div>
 
-                            {/**recaptcha */}
-                            < ReCAPTCHA
-                                ref={recaptchaRef}
-                                sitekey="6Lc9itEqAAAAAED4du2DdXh6NKf_fQn-pMvZ5nr3"
-                                onChange={(val) => setcapVal(val)}
+                            {/**hcaptcha */}
+                            <HCaptcha
+                                sitekey="2cf6b9a4-9b0c-4d52-af28-6782a0549ef0"
+                                // onVerify={setToken}
+                                ref={captchaRef}
+                                onLoad={onLoad}
+                                onVerify={(val) => setcapVal(val)}
+                            // onVerify={(val) => setcapVal(val)}
                             />
-                            <button disabled={!capVal} className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl ${capVal ? "hover:!text-white hover:!bg-yellow-400 cursor-pointer" : "cursor-not-allowed opacity-50"}`}>submit</button>
+                            <button type='submit' disabled={!capVal} className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl ${capVal ? "hover:!text-white hover:!bg-yellow-400 cursor-pointer" : "cursor-not-allowed opacity-50"}`}>submit</button>
                         </form>
-
                     </div>
+
+
                 </div>
                 <div className='md:col-start-1 flex flex-col p-4 lg:p-8 gap-2'>
                     <h2 className='uppercase text-yellow !font-bold px-4 md:pt-8 '>contact info</h2>
