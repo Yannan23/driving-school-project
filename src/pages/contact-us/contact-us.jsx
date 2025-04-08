@@ -30,7 +30,7 @@ const schema = {
 };
 
 const ContactUs = () => {
-    const [capVal, setcapVal] = useState(null);
+    const [capVal, setcapVal] = useState(true);
     const captchaRef = useRef(null);
     const [result, setResult] = useState('')
     const [token, setToken] = useState(null);
@@ -96,6 +96,15 @@ const ContactUs = () => {
             console.log(`hCaptcha Token: ${token}`);
         }
     }, [token])
+    // const onLoad = () => {
+    //     captchaRef.current.execute();
+    // }
+
+    useEffect(() => {
+        if (token) {
+            console.log(`hCaptcha Token: ${token}`);
+        }
+    }, [token])
     // const onHCaptchaChange = (token) => {
     //     // Verify the token on your server
     //     console.log('Captcha token:', token);
@@ -142,12 +151,25 @@ const ContactUs = () => {
                             <HCaptcha
                                 sitekey="2cf6b9a4-9b0c-4d52-af28-6782a0549ef0"
                                 // onVerify={setToken}
+                                // onVerify={(token, ekey) => handleVerificationSuccess(token, ekey)}
+
                                 ref={captchaRef}
-                                onLoad={onLoad}
-                                onVerify={(val) => setcapVal(val)}
+                                // onLoad={onLoad}
+                                onVerify={(token) => setToken(token)}
+                                onExpire={() => {
+                                    setcapVal(false)
+                                }}
+
                             // onVerify={(val) => setcapVal(val)}
                             />
-                            <button type='submit' disabled={!capVal} className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl ${capVal ? "hover:!text-white hover:!bg-yellow-400 cursor-pointer" : "cursor-not-allowed opacity-50"}`}>submit</button>
+                            <button
+                                type='submit'
+                                disabled={!capVal}
+                                className={`!bg-dark !w-full h-16 !text-yellow !uppercase !text-2xl 
+                                    ${capVal ?
+                                        "hover:!text-white hover:!bg-yellow-400 cursor-pointer" :
+                                        "cursor-not-allowed opacity-50"}`
+                                }>submit</button>
                         </form>
                     </div>
 
