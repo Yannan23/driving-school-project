@@ -1,10 +1,10 @@
-import Main from './main/main'
+import Main from "./main/main";
 
 function Home() {
-    return (
-        <div>
-            <Main />
-        </div>
-    )
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }
-export default Home
+export default Home;

@@ -1,15 +1,15 @@
 :root {
-    --background-color: #0F1C2F;
-    --background-light-color: #2e344e;
-    --background-light-color: #F1F1F1;
-    --yellow-color: #FDB90A;
-    --orange-color: #FF641A;
-    --red-color: #F31717;
-    --grey-color: #666666;
-    --font-dark-color: #2d2b2b;
-    --font-light-color: #F1F1F1;
-    --font-Fell: "IM Fell Double Pica SC", serif;
-    --font-Roboto-Condensed: "Roboto Condensed", serif;
-    --font-Roboto: "Roboto", serif;
-    --mt-header: 110px;
+  --background-color: #0f1c2f;
+  --background-light-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --yellow-color: #fdb90a;
+  --orange-color: #ff641a;
+  --red-color: #f31717;
+  --grey-color: #666666;
+  --font-dark-color: #2d2b2b;
+  --font-light-color: #f1f1f1;
+  --font-Fell: "IM Fell Double Pica SC", serif;
+  --font-Roboto-Condensed: "Roboto Condensed", serif;
+  --font-Roboto: "Roboto", serif;
+  --mt-header: 110px;
 }

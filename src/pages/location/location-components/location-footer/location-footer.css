@@ -1,64 +1,63 @@
-.location-footer{
-    display: flex;
-    background-color: var(--yellow-color);
-    align-items: center;
-    padding: 1.3rem 5rem;
-
+.location-footer {
+  display: flex;
+  background-color: var(--yellow-color);
+  align-items: center;
+  padding: 1.3rem 5rem;
 }
 
-.location-footer-content{
-    width: 65%;
-    font-size: 1rem;
-    margin: 0 2rem;
+.location-footer-content {
+  width: 65%;
+  font-size: 1rem;
+  margin: 0 2rem;
 }
 
 .location-footer-btn {
-    font-family: var(--font-Fell);
-    background-color: var(--background-color);
-    color: var(--font-light-color);
-    font-size: .9rem;
-    transition: 0.1s;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: 2rem;
-    padding: 0.9rem 2.4rem;
+  font-family: var(--font-Fell);
+  background-color: var(--background-color);
+  color: var(--font-light-color);
+  font-size: 0.9rem;
+  transition: 0.1s;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2rem;
+  padding: 0.9rem 2.4rem;
 }
 
-.location-footer-btn:hover{
-    background-color: white;
-    color: var(--yellow-color);
+.location-footer-btn:hover {
+  background-color: white;
+  color: var(--yellow-color);
 }
 
 @media (max-width: 768px) {
-    .location-footer {
-        flex-direction: column;
-        height: auto;
-        padding: 1.5rem;
-        text-align: center;
-    }
+  .location-footer {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+  }
 
-    .location-footer-title {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+  .location-footer-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-    .location-footer-btn {
-        margin: 2rem auto 0 auto;
-    }
+  .location-footer-btn {
+    margin: 2rem auto 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
-    .location-footer {
-        padding: 1.5rem;
-    }
+  .location-footer {
+    padding: 1.5rem;
+  }
 
-    .location-footer-title {
-        font-size: 1.8rem;
-    }
+  .location-footer-title {
+    font-size: 1.8rem;
+  }
 
-    .location-footer-btn {
-        font-size: 1rem;
-        padding: 0.6rem 1.5rem;
-        margin-top: .5rem;
-    }
+  .location-footer-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    margin-top: 0.5rem;
+  }
 }

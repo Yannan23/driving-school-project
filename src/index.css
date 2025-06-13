@@ -2,18 +2,18 @@
 @import "tailwindcss";
 
 @theme {
-    --color-dark: #0F1C2F;
-    --color-light: #2e344e;
-    --color-light-gray: #3A3A3A;
-    --color-yellow: #FDB90A;
-    --color-orange: #FF641A;
-    --color-red: #F31717;
-    --color-blue: #1E90FF;
-    --text-color-light: #F1F1F1;
-    --text-dark-gray: #333333;
+  --color-dark: #0f1c2f;
+  --color-light: #2e344e;
+  --color-light-gray: #3a3a3a;
+  --color-yellow: #fdb90a;
+  --color-orange: #ff641a;
+  --color-red: #f31717;
+  --color-blue: #1e90ff;
+  --text-color-light: #f1f1f1;
+  --text-dark-gray: #333333;
 
-    --font-Fell: "IM Fell Double Pica SC", serif;
-    --font-Roboto-Condensed: "Roboto Condensed", serif;
-    --font-Roboto: "Roboto", serif;
-    --mt-header: 110px;
+  --font-Fell: "IM Fell Double Pica SC", serif;
+  --font-Roboto-Condensed: "Roboto Condensed", serif;
+  --font-Roboto: "Roboto", serif;
+  --mt-header: 110px;
 }
