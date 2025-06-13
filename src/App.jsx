@@ -1,17 +1,16 @@
-import './App.css'
+import "./App.css";
 
-import Home from './pages/home/home'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ScrollToTop from './components/scroll-to-top/scroll-to-top'
-import Layout from './components/layout/layout';
-import WhyChooseUs from './pages/why-choose-us/why-choose-us'
-import Package from './pages/package/package'
-import Location from './pages/location/location'
-import ContactUs from './pages/contact-us/contact-us'
-import './output.css'
+import Home from "./pages/home/home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
+import Layout from "./components/layout/layout";
+import WhyChooseUs from "./pages/why-choose-us/why-choose-us";
+import Package from "./pages/package/package";
+import Location from "./pages/location/location";
+import ContactUs from "./pages/contact-us/contact-us";
+import "./output.css";
 
 function App() {
-
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -25,7 +24,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

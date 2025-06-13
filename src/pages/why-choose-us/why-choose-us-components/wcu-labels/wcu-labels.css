@@ -1,91 +1,90 @@
-.wcu-label-box{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 60vw;
-    margin: 0 auto;
+.wcu-label-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60vw;
+  margin: 0 auto;
 }
 
-.wcu-label{
-    display: flex;
-    align-items: center;
-    margin: 2rem 0;
-    border: .2rem solid var(--yellow-color);
-    height: auto;
-    padding: 2rem 0;
+.wcu-label {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  border: 0.2rem solid var(--yellow-color);
+  height: auto;
+  padding: 2rem 0;
 }
 
-.wcu-label img{
-    margin: 0 5rem;
-    width: 100px;
-    height: 100px;
+.wcu-label img {
+  margin: 0 5rem;
+  width: 100px;
+  height: 100px;
 }
 
-.wcu-content-box ul{
-    list-style-type: disc;
+.wcu-content-box ul {
+  list-style-type: disc;
 }
 
-.wcu-content-box ul li{
-    color: var(--font-dark-color);
-    font-size: 1rem;
+.wcu-content-box ul li {
+  color: var(--font-dark-color);
+  font-size: 1rem;
 }
 
-.wcu-content-title{
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: .8rem;
+.wcu-content-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
 }
 
 @media (max-width: 1200px) {
-    .wcu-label-box {
-        width: 80vw;
-    }
+  .wcu-label-box {
+    width: 80vw;
+  }
 
-    .wcu-label {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 1.5rem;
-    }
+  .wcu-label {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 1.5rem;
+  }
 
-    .wcu-label img {
-        margin: 0 auto 1rem auto;
-        width: 80px;
-        height: 80px;
-    }
+  .wcu-label img {
+    margin: 0 auto 1rem auto;
+    width: 80px;
+    height: 80px;
+  }
 
-    .wcu-content-title {
-        font-size: 1.6rem;
-    }
+  .wcu-content-title {
+    font-size: 1.6rem;
+  }
 
-    .wcu-content-box ul {
-        padding-left: 1rem;
-    }
+  .wcu-content-box ul {
+    padding-left: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .wcu-label-box {
-        width: 90%;
-    }
+  .wcu-label-box {
+    width: 90%;
+  }
 
-    .wcu-label {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-    }
+  .wcu-label {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
 
-    .wcu-label img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1rem;
-    }
+  .wcu-label img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
 
-    .wcu-content-title {
-        font-size: 1.4rem;
-    }
+  .wcu-content-title {
+    font-size: 1.4rem;
+  }
 
-    .wcu-content-box ul li {
-        font-size: 0.9rem;
-    }
+  .wcu-content-box ul li {
+    font-size: 0.9rem;
+  }
 }
-
