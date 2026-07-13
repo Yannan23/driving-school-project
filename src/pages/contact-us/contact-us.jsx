@@ -253,7 +253,7 @@ const ContactUs = () => {
                   to="/contact-us"
                   className="hover:text-amber-400 cursor-pointer"
                 >
-                  khanrashed2411@gmail.com
+                  ysun_work@outlook.com
                 </NavLink>
               </div>
             </div>

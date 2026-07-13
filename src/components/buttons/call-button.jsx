@@ -1,6 +1,6 @@
 const CallButton = () => {
   const handleClick = () => {
-    window.location.href = "tel:+61470272595";
+    window.location.href = "tel:+61469819246";
   };
 
   return (
@@ -9,7 +9,7 @@ const CallButton = () => {
         onClick={handleClick}
         className="hover:text-amber-400 hover:underline cursor-pointer font-Roboto-Condensed text-amber-400 text-lg lg:text-2xl font-bold underline"
       >
-        0470272595
+        +61 469819246
       </p>
     </button>
   );

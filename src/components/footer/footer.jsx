@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="flex justify-start items-center gap-2">
                   <i className="fa-solid fa-envelope"></i>
                   <p className="hover:text-yellow cursor-pointer">
-                    <NavLink to="contact-us">khanrashed2411@gmail.com</NavLink>
+                    <NavLink to="contact-us">ysun_work@outlook.com</NavLink>
                   </p>
                 </div>
                 <div className="flex justify-start items-center gap-2">
